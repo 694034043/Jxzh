@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors defaultError="" judgeType="0" errorPackage="package">
+     <!--
+     	judgetype: 校验方式 0 只校验 id  1只校验name 2 校验id或name  3校验id和name
+     	id : 错误id,即错误编号
+     	name: 错误内容
+     	method: 接口id
+     	type: 错误类型  个位 (0 为错误  1为警告)  10位(0为显示 1为不显示)  100位(0为终止传递son,1为继续传递son)
+     	classname: 错误显示的类
+      -->
+	<msg id="1003" name="您的账号在其他设备登录，请重新登陆" className="com.zheye.cytx.dialog.HasDeleteErrorLogin">您的账号在其他设备登录，请重新登陆</msg>
+	<msg id="10003" name="用户名或密码不正确" className="com.zheye.shfw.dialog.NoLoginError">用户名或密码不正确</msg>
+
+	 <msg id="9096" type="10">接口处理方法未定义</msg>
+	 <msg id="9097" type="10">接口处理错误</msg>
+	 <msg id="98">网络连接错误</msg>
+
+	 <msg id="20101" name="活动已过期或已下线" className="com.udows.fxsc2.dialog.GuoqiError">活动已过期或已下线</msg>
+	 <msg id="20401" name="该商家不存在或已关闭" className="com.udows.fxsc2.dialog.StoreGuoqiError">该商家不存在或已关闭</msg>
+	 <msg id="2001" name="商品不存在或已下架" className="com.udows.fxsc2.dialog.GoodsGuoqiError">商品不存在或已下架</msg>
+</errors>

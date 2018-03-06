@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="储存"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="8dp"
+                android:text="事件"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/tv"
+                android:background="@null"
+                android:gravity="top"
+                android:maxLength="200"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorContentText"
+                android:textSize="14sp"
+                android:hint="请输入事件" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp">
+            <TextView 
+                android:id="@+id/tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:text="1/200"/>
+        </RelativeLayout>
+
+        <RelativeLayout 
+            android:id="@+id/rlNoticeTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="提醒时间"
+                android:textSize="14sp" />
+            
+            <TextView 
+                android:id="@+id/tvNoticeTime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/xms_icon_calendar"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="2016年12月25日"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                style="@style/line"/>
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/rlRecycleType"
+            android:layout_width="match_parent"
+             android:layout_height="50dp"
+            android:paddingLeft="12dp"
+            android:background="@color/white"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="重复"
+                android:textSize="14sp" />
+            
+            <TextView 
+                android:id="@+id/tvTYPE"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@drawable/xms_right_arrow"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="每周"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                style="@style/line"/>
+        </RelativeLayout>
+       
+    </LinearLayout>
+

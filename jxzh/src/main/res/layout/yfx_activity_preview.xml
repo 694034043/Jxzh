@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="信用卡卡号"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvCreditCard"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="收款账号"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvReceiptCard"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="资金用途"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvPurpose"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="申请金额"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvApplySum"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="申请期数"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvApplyStages"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="还款方式"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvRefundWay"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="48dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="每期手续费"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvhCharge"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="首期还款金额: "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvfRefund"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="155****5555"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="请输入验证码: "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvCheckCode"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="卡片背面签名栏末3位: "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvLast3"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="优惠码: "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvfCode"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="56dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="查询密码: "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvQueryPWD"
+                    style="@style/text_view_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnApply"
+                style="@style/BigButton_Margin"
+                android:text="确认提交" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

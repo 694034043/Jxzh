@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="j106dp">106.0dp</dimen>
+    <dimen name="j36dp">36.0dp</dimen>
+    <dimen name="j65dp">65.0dp</dimen>
+    <dimen name="j320dp">320.0dp</dimen>
+
+</resources>

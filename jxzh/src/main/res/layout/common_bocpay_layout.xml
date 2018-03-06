@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPayMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+ >
+
+    <LinearLayout
+        android:id="@+id/llt_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="银行卡"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_pay_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right|center_vertical"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textview_normal_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_card_sum_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/text_gray_medium"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_card_sum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/text_gray_medium"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <TextView
+            android:id="@+id/tvAddBankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/add_cardtext_selector"
+            android:drawableLeft="@drawable/bg_add_card"
+            android:drawablePadding="5dp"
+            android:text="添加银行卡"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/textview_normal_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:maxLength="6"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#D0D0D0"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <LinearLayout
+            android:id="@+id/llt_send_msg"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:background="@drawable/send_btn_selector"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rlt_loading"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_send_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:text="确认支付"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textview_normal_size" />
+    </LinearLayout>
+</LinearLayout>

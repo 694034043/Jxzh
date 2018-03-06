@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffffff" android:orientation="vertical">
+
+    <com.framewidget.newMenu.DfMViewPager android:id="@+id/frame_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+
+    <RelativeLayout android:id="@+id/mRelativeLayout_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+        <com.framewidget.newMenu.DfRadioGroup android:id="@+id/mRadioGroup" style="@style/menu_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@+id/a" android:orientation="horizontal"/>
+
+        <LinearLayout android:id="@+id/mLinearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/mRadioGroup" android:layout_alignTop="@+id/mRadioGroup" android:background="#00000000" android:orientation="horizontal"/>
+    </RelativeLayout>
+
+</LinearLayout>

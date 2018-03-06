@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"        
+        android:background="@drawable/ui_bocop_dialog_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/ui_bocop_dialog_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="#ffffff"
+            android:shadowDx="2.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:textColor="#707070"
+            android:textSize="21sp" />
+
+        <View
+            android:id="@+id/ui_bocop_dialog_split"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_below="@id/ui_bocop_dialog_tv_title"
+            android:background="@drawable/ui_bocop_dialog_split_line" />
+
+        <TextView
+            android:id="@+id/ui_bocop_dialog_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ui_bocop_dialog_split"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:textColor="#707070"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ui_bocop_dialog_tv_text"
+            android:background="@drawable/ui_bocop_dialog_btn_container_bg"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/ui_bocop_dialog_btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:background="@drawable/ui_bocop_dialog_btn_bg_selector"
+                android:shadowColor="#ffffff"
+                android:shadowDx="2.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="0.5"
+                android:text="取消"
+                android:textColor="#525252"
+                android:textSize="20sp" 
+                />
+
+            <Button
+                android:id="@+id/ui_bocop_dialog_btn_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ui_bocop_dialog_btn_bg_selector"
+                android:shadowColor="#ffffff"
+                android:shadowDx="2.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="0.5"
+                android:text="确定"
+                android:textColor="#525252"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

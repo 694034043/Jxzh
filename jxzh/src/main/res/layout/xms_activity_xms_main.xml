@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llXmsMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="提醒秘书"
+                android:textColor="#da3f3b"
+                android:textSize="16sp" />
+
+            <TextView style="@style/xms_horizontal_line" />
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvRemind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/background_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="金融秘书"
+                android:textColor="#da3f3b"
+                android:textSize="16sp" />
+
+            <TextView style="@style/xms_horizontal_line" />
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvJRService"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/background_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="生活秘书"
+                android:textColor="#da3f3b"
+                android:textSize="16sp" />
+
+            <TextView style="@style/xms_horizontal_line" />
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvDailyLife"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/background_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:text="出行秘书"
+                android:textColor="#da3f3b"
+                android:textSize="16sp" />
+
+            <TextView style="@style/xms_horizontal_line" />
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvNecessary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

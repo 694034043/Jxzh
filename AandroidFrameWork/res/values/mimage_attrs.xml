@@ -1,0 +1,11 @@
+<resources>
+
+    <declare-styleable name="Mimage">
+        <attr name="toColor" format="color" />
+        <attr name="clickColor" format="color" />
+        <attr name="clickFlag" format="integer" />
+        <attr name="round" format="integer" />
+        <attr name="blur" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提款金额："
+                        android:textSize="@dimen/textview_little_bigger_size" />
+
+                    <TextView
+                        android:id="@+id/tvPickUpAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorContentText"
+                        android:textSize="@dimen/textview_little_bigger_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每日利率："
+                        android:textSize="@dimen/textview_little_bigger_size" />
+
+                    <TextView
+                        android:id="@+id/tvLoanIst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/colorContentText"
+                        android:textSize="@dimen/textview_little_bigger_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用款期限："
+                        android:textSize="@dimen/textview_little_bigger_size" />
+
+                    <TextView
+                        android:id="@+id/tvPeriod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorContentText"
+                        android:textSize="@dimen/textview_little_bigger_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="贷款用途："
+                        android:textSize="@dimen/textview_little_bigger_size" />
+
+                    <TextView
+                        android:id="@+id/tvLoanUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorContentText"
+                        android:textSize="@dimen/textview_little_bigger_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提款卡号："
+                    android:textSize="@dimen/textview_little_bigger_size" />
+
+                <TextView
+                    android:id="@+id/tvToCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorContentText"
+                    android:textSize="@dimen/textview_little_bigger_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款方式："
+                    android:textSize="@dimen/textview_little_bigger_size" />
+
+                <TextView
+                    android:id="@+id/tvRefundWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorContentText"
+                    android:textSize="@dimen/textview_little_bigger_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款卡号："
+                    android:textSize="@dimen/textview_little_bigger_size" />
+
+                <TextView
+                    android:id="@+id/tvRefundCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorContentText"
+                    android:textSize="@dimen/textview_little_bigger_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:id="@+id/tvCheckCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="短信验证码"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="　　　　　"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <EditText
+                    android:id="@+id/etCheckCode"
+                    style="@style/edit_text_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toLeftOf="@+id/tvGetCheckCode"
+                    android:layout_toRightOf="@+id/tv8"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+                <TextView
+                    android:id="@+id/tvGetCheckCode"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/yfx_shape_get_check_code"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="8dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textview_normal_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCommand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" >
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="动态口令码"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <EditText
+                    android:id="@+id/etDynamicCommand"
+                    style="@style/edit_text_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toLeftOf="@+id/tv7"
+                    android:layout_toRightOf="@+id/tv6"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/yfx_shape_get_check_code"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="8dp"
+                    android:text="获取验证码"
+                    android:textSize="@dimen/textview_normal_size"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnAffirm"
+                style="@style/BigButton_Margin"
+                android:text="确认" />
+
+            <TextView
+                android:id="@+id/tvCalResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="24dp"
+                android:text="还款计划试算"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

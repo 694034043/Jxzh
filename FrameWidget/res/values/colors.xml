@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="yellow_1">#ED950B</color>
+    <color name="blue_1">#0BAFED</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="gray">#FF959595</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="click_false">#0b63ad</color>
+    <color name="bg_an">#9AA809</color>
+    <color name="click_ture">#2e7ec2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_text">#0091F6</color>
+    <color name="black">#000000</color>
+    <color name="green">#0F7169</color>
+    <color name="pet_gray">#666666</color>
+    <color name="c">#666666</color>
+    <color name="bg">#F1F0F2</color>
+    <color name="login_dialog_background">#00000000</color>
+    <color name="color_66">#666666</color>
+    <color name="color_01">#010101</color>
+    <color name="color_33">#333333</color>
+    <color name="color_b5">#b5b5b5</color>
+    <color name="color_93">#939393</color>
+    <color name="login_99">#999999</color>
+    <color name="myinfo_47">#474747</color>
+    <color name="myinfo_84">#848484</color>
+    <color name="shouye_yellow">#F6BC10</color>
+    <color name="shouye_green">#93B228</color>
+    <color name="shouye_fen">#AA266F</color>
+    <color name="shouye_red">#FF0000</color>
+    <color name="blue">#02D2C2</color>
+    <color name="blue_2">#149DF0</color>
+    <color name="blue_3">#099BEF</color>
+    <color name="top">#E2E3E5</color>
+    <color name="bottom">#E2E3E5</color>
+    <color name="background">#02D2C2</color>
+    <color name="background_an">#0aa89a</color>
+    <color name="transpot">#22000000</color>
+    <color name="yellow">#F39C06</color>
+    <color name="juyellow">#FFA305</color>
+    <color name="default_circle_indicator_fill_color">#FFA305</color>
+    <color name="default_circle_indicator_page_color">#ECEBEB</color>
+    <color name="default_circle_indicator_stroke_color">#00000000</color>
+
+    <drawable name="cao_qian">@color/white</drawable>
+    <drawable name="cao_hou">@color/background</drawable>
+    <drawable name="background">@color/background</drawable>
+    <drawable name="background_an">@color/background_an</drawable>
+
+    <color name="A">#ff4f39</color>
+
+    <color name="B1">#ffb739</color>
+
+    <color name="Da">#ff4f39</color>
+    <color name="D1">#cccccc</color>
+    <color name="D2">#dddddd</color>
+
+    <color name="Ea">#ff4f39</color>
+    <color name="E1">#ffffff</color>
+    <color name="E2">#262626</color>
+    <color name="E3">#444444</color>
+    <color name="E4">#888888</color>
+    <color name="E5">#aaaaaa</color>
+    <color name="E6">#cccccc</color>
+    <color name="E7">#4a88fb</color>
+
+    <color name="Fa">#ff4f39</color>
+    <color name="F1">#ffffff</color>
+    <color name="F2">#000000</color>
+    <color name="F3">#4a88fb</color>
+    <color name="F4">#ff6138</color>
+    <color name="F5">#00a0e9</color>
+    <color name="F6">#ff9c00</color>
+    <color name="F7">#ff6d6d</color>
+    <color name="F8">#6cd350</color>
+    <color name="F9">#a9a9a9</color>
+    <color name="F10">#dcdcdc</color>
+
+    <color name="G1">#f5f5f5</color>
+    <color name="G2">#ffffff</color>
+    <color name="G3">#000000</color>
+    <color name="G4">#f2f2f2</color>
+
+</resources>

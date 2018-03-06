@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="16dp" >
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv1" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_margin="12dp" -->
+    <!-- android:padding="12dp" -->
+    <!-- android:text="您的剩余额度为:" -->
+    <!-- android:textSize="@dimen/textview_normal_size" -->
+    <!-- android:visibility="visible" /> -->
+
+    <Button
+        android:id="@+id/btnPickUp"
+        style="@style/BigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="提取"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llRemainning"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/yfx_shape_circle_stroke_grey"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="授信额度："
+                android:textSize="@dimen/textview_mid_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:text="￥"
+                android:textSize="@dimen/textview_mid_size" />
+
+            <TextView
+                android:id="@+id/tvTotalSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6,555,444.00"
+                android:textSize="@dimen/textview_mid_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余额度："
+                android:textSize="@dimen/textview_mid_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:text="￥"
+                android:textColor="@color/redLight"
+                android:textSize="@dimen/textview_mid_size" />
+
+            <TextView
+                android:id="@+id/tvRemainningSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6,555,444.00"
+                android:textColor="@color/redLight"
+                android:textSize="@dimen/textview_mid_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="额度状态："
+                android:textSize="@dimen/textview_mid_size" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="已激活"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/textview_mid_size" />
+
+            <ImageView
+                android:id="@+id/ivIntro"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/yfx_mark_01" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/yfx_shape_circle_stroke_grey"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <com.bocop.yfx.view.JustifyTextView
+            android:id="@+id/tvApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:textColor="@color/colorContentText"
+            android:textSize="@dimen/textview_normal_size" />
+    </LinearLayout>
+
+</RelativeLayout>

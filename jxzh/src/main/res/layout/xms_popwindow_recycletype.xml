@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        >
+        <TextView 
+            android:id="@+id/tvCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="取消"/>
+        <TextView 
+            android:id="@+id/tvSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:text="确认"/>
+    </RelativeLayout>
+    
+     <View android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         style="@style/line"/>
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:gravity="center"
+         >
+        
+	    <!--  <com.bocop.xms.view.PickerView
+	         android:id="@+id/pvType"
+	         android:layout_width="80dp"
+	         android:layout_height="wrap_content"/> -->
+	      <RadioGroup 
+	          android:id="@+id/rgGroup"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:orientation="vertical">
+	         
+	         <RadioButton
+	             android:id="@+id/cbYB"
+	             android:layout_width="match_parent"
+	             android:layout_height="0dp"
+	             android:layout_weight="1"
+	             android:button="@null"
+	             android:background="@drawable/xms_selector_bg_checkbox"
+	             android:text="永不"
+	             android:gravity="center"/>
+	         <View android:layout_width="match_parent"
+	             android:layout_height="0.5dp"
+	             android:background="@color/line"/>
+	        
+	          <RadioButton
+	             android:id="@+id/cbMT"
+	             android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	             android:button="@null"
+	             android:text="每天"
+	             android:background="@drawable/xms_selector_bg_checkbox"
+	             android:gravity="center"/>
+	           <View android:layout_width="match_parent"
+	             android:layout_height="0.5dp"
+	             android:background="@color/line"/>
+	           <RadioButton
+	             android:id="@+id/cbMZ"
+	             android:layout_width="match_parent"
+	             android:layout_height="0dp"
+	             android:layout_weight="1"
+	             android:button="@null"
+	             android:text="每周"
+	             android:background="@drawable/xms_selector_bg_checkbox"
+	             android:gravity="center"/>
+	            <View android:layout_width="match_parent"
+	             android:layout_height="0.5dp"
+	             android:background="@color/line"/>
+	            <RadioButton
+	             android:id="@+id/cbMY"
+	             android:layout_width="match_parent"
+	             android:layout_height="0dp"
+	             android:layout_weight="1"
+	             android:button="@null"
+	             android:text="每月"
+	             android:background="@drawable/xms_selector_bg_checkbox"
+	             android:gravity="center"/>
+     </RadioGroup>
+     </LinearLayout>
+</LinearLayout>

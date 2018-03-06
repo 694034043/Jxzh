@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="theme_color">#A10022</color>
+    <color name="white">#FFFFFF</color>
+    <color name="trans_color">#00000000</color>
+    <color name="AAF90808">#AAF90808</color>
+    <color name="color_949BAB">#949BAB</color>
+    <color name="DFDFDF">#DFDFDF</color>
+    <color name="E4E4E4">#E4E4E4</color>
+    <color name="E1E1E3">#E1E1E3</color>
+    <color name="FEEFC8">#FEEFC8</color>
+    <color name="E17304">#E17304</color>
+    <color name="E1E1E1">#E1E1E1</color>
+    <color name="black">#000000</color>
+    <color name="FFF3D9">#FFF3D9</color>
+    <color name="F6F4EF">#F6F4EF</color>
+    <color name="AA8D38">#AA8D38</color>
+    <color name="gray">#E1E1E1</color>
+    <color name="bg_gray">#DCDCDC</color>
+    <color name="yellow">#BDA255</color>
+    <color name="yin_ci_theme_color">#00489D</color>
+    <color name="yin_ci_text_black">#636363</color>
+    <color name="hintColor">#CCCCCC</color>
+
+    <!-- 支付页面颜色 -->
+    <color name="bg_all_new">#F5F4EE</color>
+    <color name="color_cai_shen">#44000000</color>
+    <color name="text_gray_deep">#727272</color>
+    <color name="phone_tip">#a7a7a0</color>
+    <color name="bg_red">#FF0000</color>
+    <color name="text_blue">#007AFF</color>
+    <color name="text_gray_medium">#a1a1a1</color>
+    <color name="list_click">#D8D8D8</color>
+    <color name="transparent">#00000000</color>
+    <color name="pay_send_msg">#727272</color>
+    <color name="pay_send_msg1">#CECECE</color>
+    <!-- 通用色值 -->
+    <color name="light_gray">#E4E4E4</color>
+    <!-- 全局黄颜色 -->
+    <color name="rbcolor">#f2f2f2</color>
+    <color name="light_yellow">#AA8D38</color>
+    <color name="yellow_2">#f1ac07</color>
+    <color name="orange">#F17123</color>
+    <color name="orange_p">#ccF17123</color>
+    <!-- 全局红颜色 -->
+    <color name="red">#A10022</color>
+    <color name="depth_red">#AAF90808</color>
+    <color name="noColor">#55000000</color>
+    <color name="homered">#B6002A</color>
+
+    <!-- 全局字体颜色 -->
+    <color name="textGray">#5B5E63</color>
+    <color name="text_lightGray">#A4A4A4</color>
+    <!-- 取消或默认按钮颜色 -->
+    <color name="button_grey">#38000000</color>
+    <color name="button_darkGray">#99999D</color>
+
+    <!-- 二维码扫描颜色值 -->
+    <color name="head_text">#0e5986</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+    <!-- 标题浅绿色背景 -->
+    <color name="title_light_green">#049681</color>
+    <!-- 标题深绿色 搜索背景 -->
+    <color name="title_dark_green">#048774</color>
+    <!-- 标题搜索字体颜色 -->
+    <color name="title_text_green">#70AEA2</color>
+    <!-- 底部背景颜色 -->
+    <color name="bottom_bg">#F8F8F8</color>
+
+    <!-- 具体应用 -->
+    <color name="bgcolor">@color/jlb_gray_bg</color>
+    <color name="jlb_blue">#044BAD</color>
+    <color name="jlb_gray_bg">#F1F2F4</color>
+    <color name="jlb_gray_text">#808080</color>
+    <color name="jlb_gray_stroke">#E0E4E3</color>
+    <color name="jlb_gray_layout">#E0E0E0</color>
+    <color name="jlb_orange">#F2BB82</color>
+    <color name="jlb_point">#d2d2d2</color>
+    <color name="line">#D9D9D9</color>
+    <color name="jlb_point_selected">#868686</color>
+
+    <!-- 个人中心背景颜色 -->
+    <color name="grzx_bg">#F0EFF4</color>
+    <color name="bocop_dialog_bg">#77000000</color>
+    <!-- txm -->
+    <color name="color_cececd">#CECECD</color>
+    <color name="bg">#f5f5f5</color>
+    <color name="color_666666">#666666</color>
+    <!-- 首页item颜色选择器颜色 -->
+    <drawable name="fav_grid_default">#ffffffff</drawable>
+    <drawable name="fav_grid_pressed">#ffefefef</drawable>
+    <!-- 签证通列表的颜色 -->
+    <color name="head_bg">#663300</color>
+    <color name="touming">#00000000</color>
+    <color name="GDVWBG">#DFDFDF</color>
+
+</resources>

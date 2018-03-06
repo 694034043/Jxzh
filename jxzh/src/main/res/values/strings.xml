@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易互通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tx_logout">退出登录</string>
+    <string name="tx_login">登录</string>
+    <string name="lv_cardmanager">银行卡管理</string>
+    <string name="lv_userpassword">密码管理</string>
+    <string name="lv_versionupdate">版本更新</string>
+    <string name="lv_feedback">意见反馈</string>
+    <string name="idcard">身份证</string>
+    <string name="userid">用户</string>
+    <string name="licensenumber">车牌号码：</string>
+    <string name="ownername">车主姓名：</string>
+    <string name="licensetype">车牌类型：</string>
+    <string name="tel">登记号码：</string>
+    <string name="vehiclenum">发动机号：</string>
+    <string name="hintlicensenum">A88888</string>
+    <string name="hintvehiclenum">888888</string>
+    <string name="kindlyremindadd">2、以上信息为交管局查询所需信息，仅用于帮您查询违法，您的信息将严格保密，请放心使用</string>
+    <string name="bt_addcar">" + 添加车辆"</string>
+    <string name="filenum">档案编号：</string>
+    <string name="drivenum">驾驶证号：</string>
+    <string name="quasidriving">准驾车型：</string>
+    <string name="penaltyscore">记分数：</string>
+    <string name="state">状态：</string>
+    <string name="replacementdate">换证日期：</string>
+    <string name="mylicense">我的驾驶证</string>
+    <string name="intdrivenum">362201198708060010</string>
+    <string name="hintfilenum">9876867723</string>
+    <string name="kindlyremandfile">*档案编号可以在驾驶证副页上查询</string>
+    <string name="carpeccancy">违章查询</string>
+    <string name="attention1">注：如符合办理条件则显示办理违章按钮，否则提示“此违章信息请您到附件交警队进行处理”</string>
+    <string name="attention2">提示：对此笔处罚如有异议请到处罚机关进行复议</string>
+    <string name="removed_positions">删除为止: %s</string>
+    <string name="moved">\'%1$s\' 移到 %2$s</string>
+    <string name="newly_added_item">新增ITEM %d</string>
+    <string name="traffic_unit">缴费单位：</string>
+    <string name="traffic_place">缴费地区：</string>
+    <string name="traffic_unit_name">江西省交警大队</string>
+    <string name="traffic_office_hours">缴费时段为每天00:00-21:00</string>
+    <string name="traffic_penalty_number">处罚决定书编号：</string>
+    <string name="traffic_place_name">江西</string>
+    <string name="paysuccess_prompt">支付成功</string>
+    <string name="kindlyremindadd1">1、绑定前请确认您的用户已经在中银开放平台进行实名认证，认证地址：http://open.boc.cn</string>
+    <string name="refund_per_stage">XXXXXXXX</string>
+    <string name="title_activity_eshare">EShareActivity</string>
+    <string name="updateInfo">修改资料</string>
+    <string name="choose">请选择</string>
+    <string name="feedback_success">发送成功</string>
+    <string name="feedback_failed">发送失败</string>
+    <string name="waiting">正在处理，请稍等片刻…</string>
+    <string name="yin_jun_tong_info_dialog_prompt">请输入您的军人保障卡信息，以便我行确认您的军人身份。</string>
+    <string name="tv_yjt_info_dialog_title">军人尊享身份识别</string>
+
+	<!-- 银区通 -->
+	<string name="yqt_module_key">yqt</string>
+	<string name="yqt_main_title">银区通</string>
+
+    <!-- 银供通item名称 -->
+    <string name="ygt_item_01_01_01">供销e贷</string>
+    <string name="ygt_item_01_01_02">社员e贷</string>
+    <string name="ygt_item_01_01_03">消费e贷</string>
+    <string name="ygt_item_01_01_04">公积e贷</string>
+    
+    <string name="ygt_item_02_01_01">供销e家</string>
+    <string name="ygt_item_02_01_02">精品e购</string>
+    <string name="ygt_item_02_01_03">聚惠e享</string>
+    <string name="ygt_item_02_01_04">外购e通</string>
+    
+    <string name="ygt_item_03_01_01">e开户</string>
+    <string name="ygt_item_03_01_02">e理财</string>
+    <string name="ygt_item_03_01_03">e财富</string>
+    <string name="ygt_item_03_01_04">e支付</string>
+    <string name="ygt_item_03_02_01">e售汇</string>
+    <string name="ygt_item_03_02_02">e汇兑</string>
+    <string name="ygt_item_03_02_03">e单证</string>
+    <string name="ygt_item_03_02_04">e保函</string>
+    <string name="ygt_item_03_03_01">e保险</string>
+    <string name="ygt_item_03_03_02">e证券</string>
+    
+    <string name="ygt_item_04_01_01">e助手</string>
+    <string name="ygt_item_04_01_02">e缴费</string>
+    <string name="ygt_item_04_01_03">e车惠</string>
+    <string name="ygt_item_04_01_04">e旅游</string>
+    
+    <!-- 银瓷通 -->
+
+	<string name="yct_module_key">yct</string>
+	<string name="yct_main_title">银瓷通</string>
+	<string name="yct_finance_item_02_01_01">消贷宝</string>
+	<string name="yct_culture_item_bottom_banner_01">客户互动留言</string>
+	<string name="yct_culture_item_bottom_banner_02">千年瓷都景德镇</string>
+	<string name="yct_culture_item_bottom_banner_03">景德镇市陶瓷产业发展局</string>
+
+
+	<string name="yct_mall_item_02_01_01">富玉陶瓷</string>
+	<string name="yct_mall_item_02_01_02">诚德轩</string>
+	<string name="yct_mall_item_02_01_03">瓷上功夫</string>
+	<string name="yct_mall_item_02_01_04">铖瓷</string>
+	<string name="yct_mall_item_02_02_01">宝瓷林</string>
+	<string name="yct_mall_item_02_02_02">昌南陶瓷</string>
+	<string name="yct_mall_item_02_02_03">逸沁堂</string>
+	<string name="yct_mall_item_02_02_04">LUKE旗舰店</string>
+	<string name="yct_mall_item_02_03_01">红叶陶瓷</string>
+	<string name="yct_mall_item_02_03_02">欢畅陶瓷</string>
+	<string name="yct_mall_item_02_03_03">博泰陶瓷</string>
+	<string name="yct_mall_item_02_03_04">博艺陶瓷</string>
+	<string name="yct_mall_item_02_04_01">沁心陶瓷</string>
+	<string name="yct_mall_item_02_04_02">红鑫陶瓷</string>
+	<string name="yct_mall_item_02_04_03">聚雅陶瓷</string>
+	<string name="yct_mall_item_02_04_04">雅玉陶瓷灯饰厂</string>
+	<string name="yct_mall_item_02_05_01">雅钰陶瓷艺术馆</string>
+	<string name="yct_mall_item_02_05_02">景德镇家具</string>
+	<string name="yct_mall_item_02_05_03">yomerto</string>
+	<string name="yct_mall_item_02_05_04">爱爵瓷业</string>
+
+	<string name="yct_mall_item_02_06_01">恩益</string>
+	<string name="yct_mall_item_02_06_02">斐伦特</string>
+	<string name="yct_mall_item_02_06_03">攻玉陶瓷</string>
+	<string name="yct_mall_item_02_06_04">格莱克陶瓷</string>
+
+	<string name="yct_mall_item_02_07_01">恒焱陶瓷</string>
+	<string name="yct_mall_item_02_07_02">龙斌</string>
+	<string name="yct_mall_item_02_07_03">圣瓦</string>
+	<string name="yct_mall_item_02_07_04">泥之歌</string>
+
+	<string name="yct_mall_item_02_08_01">唐龙陶瓷</string>
+	<string name="yct_mall_item_02_08_02">陶行天下</string>
+	<string name="yct_mall_item_02_08_03">熊窑</string>
+	<string name="yct_mall_item_02_08_04">窑夫家居</string>
+
+	<string name="yct_mall_item_02_09_01">卓之艺陶瓷</string>
+	<string name="yct_mall_item_02_09_02">钟家千年</string>
+	<string name="yct_mall_item_02_09_03">景德镇家具旗舰店</string>
+	<string name="yct_mall_item_02_09_04">景德镇陶世界爆品店</string>
+	<string name="yct_mall_item_02_10_01">金麒麟陶瓷馆</string>
+	<string name="yct_mall_item_02_10_02">云景陶瓷</string>
+	<string name="yct_mall_item_02_10_03">茗轩茶舍旗舰店</string>
+	<string name="yct_mall_item_02_10_04">鹏博陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_11_01">杜鹃陶瓷</string>
+	<string name="yct_mall_item_02_11_02">美杜莎陶瓷馆</string>
+	<string name="yct_mall_item_02_11_03">瓷如玉陶瓷</string>
+	<string name="yct_mall_item_02_11_04">九土旗舰店</string>
+	<string name="yct_mall_item_02_12_01">素功</string>
+	<string name="yct_mall_item_02_12_02">瓷家陶瓷</string>
+	<string name="yct_mall_item_02_12_03">黑色家居旗舰店</string>
+	<string name="yct_mall_item_02_12_04">如意陶瓷馆</string>
+	<string name="yct_mall_item_02_13_01">三勒堂旗舰店</string>
+	<string name="yct_mall_item_02_13_02">miske旗舰店</string>
+	<string name="yct_mall_item_02_13_03">景德镇陶瓷堡</string>
+	<string name="yct_mall_item_02_13_04">五心陶瓷</string>
+	<string name="yct_mall_item_02_14_01">山水间 人文茶器</string>
+	<string name="yct_mall_item_02_14_02">皓泰家居旗舰店</string>
+	<string name="yct_mall_item_02_14_03">喜跃陶瓷家居旗舰店</string>
+	<string name="yct_mall_item_02_14_04">景天合旗舰店</string>
+	<string name="yct_mall_item_02_15_01">以辰居家日用旗舰店</string>
+	<string name="yct_mall_item_02_15_02">华君家居</string>
+	<string name="yct_mall_item_02_15_03">洛威家居旗舰店</string>
+	<string name="yct_mall_item_02_15_04">联合居家日用专营店</string>
+	<string name="yct_mall_item_02_16_01">玺道旗舰店</string>
+	<string name="yct_mall_item_02_16_02">亚莱迩家居旗舰店</string>
+	<string name="yct_mall_item_02_16_03">和田烧陶瓷商城店</string>
+	<string name="yct_mall_item_02_16_04">景宇居家日用旗舰店</string>
+	<string name="yct_mall_item_02_17_01">恒焱家居旗舰店</string>
+	<string name="yct_mall_item_02_17_02">玩物志Native</string>
+	<string name="yct_mall_item_02_17_03">瓷轩陶瓷馆</string>
+	<string name="yct_mall_item_02_17_04">宝印旗舰店</string>
+	<string name="yct_mall_item_02_18_01">大师汇旗舰店</string>
+	<string name="yct_mall_item_02_18_02">淘瓷馆</string>
+	<string name="yct_mall_item_02_18_03">瓷美柯旗舰店</string>
+	<string name="yct_mall_item_02_18_04">极光陶瓷馆</string>
+	<string name="yct_mall_item_02_19_01">景德镇语莎陶瓷</string>
+	<string name="yct_mall_item_02_19_02">翔纭陶瓷茶具</string>
+	<string name="yct_mall_item_02_19_03">景德镇三亩地陶瓷</string>
+	<string name="yct_mall_item_02_19_04">优嘉陶瓷馆</string>
+	<string name="yct_mall_item_02_20_01">十月手工陶瓷店</string>
+	<string name="yct_mall_item_02_20_02">品瓷家居</string>
+	<string name="yct_mall_item_02_20_03">韵和陶瓷家居</string>
+	<string name="yct_mall_item_02_20_04">君鑫旗舰店</string>
+	<string name="yct_mall_item_02_21_01">瓷乐购餐具</string>
+	<string name="yct_mall_item_02_21_02">攻玉陶瓷体验馆</string>
+	<string name="yct_mall_item_02_21_03">贝玉旗舰店</string>
+	<string name="yct_mall_item_02_21_04">百佳陶瓷厂直销</string>
+	<string name="yct_mall_item_02_22_01">雅瓷嘉陶</string>
+	<string name="yct_mall_item_02_22_02">熊氏陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_22_03">杨氏陶瓷店</string>
+	<string name="yct_mall_item_02_22_04">瓷艺居陶瓷艺术家居</string>
+	<string name="yct_mall_item_02_23_01">瓷犀陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_23_02">瓷风舍家居</string>
+	<string name="yct_mall_item_02_23_03">晴阳陶瓷家园</string>
+	<string name="yct_mall_item_02_23_04">风尚陶瓷馆</string>
+	<string name="yct_mall_item_02_24_01">颐合家居旗舰店</string>
+	<string name="yct_mall_item_02_24_02">景程陶瓷馆</string>
+	<string name="yct_mall_item_02_24_03">景德镇宁封窑</string>
+	<string name="yct_mall_item_02_24_04">景德镇宏赫陶瓷</string>
+	<string name="yct_mall_item_02_25_01">五良大甫旗舰店</string>
+	<string name="yct_mall_item_02_25_02">玉平瓷海</string>
+	<string name="yct_mall_item_02_25_03">燚坊</string>
+	<string name="yct_mall_item_02_25_04">小陶器手工杯定制</string>
+	<string name="yct_mall_item_02_26_01">良玉陶瓷</string>
+	<string name="yct_mall_item_02_26_02">依依陶瓷馆</string>
+	<string name="yct_mall_item_02_26_03">景德镇云杰陶瓷酒瓶</string>
+	<string name="yct_mall_item_02_26_04">大拇指陶瓷馆</string>
+	<string name="yct_mall_item_02_27_01">瓷一品陶瓷馆</string>
+	<string name="yct_mall_item_02_27_02">景华陶瓷</string>
+	<string name="yct_mall_item_02_27_03">欢喜陶瓷</string>
+	<string name="yct_mall_item_02_27_04">故由</string>
+	<string name="yct_mall_item_02_28_01">时尚陶瓷馆</string>
+	<string name="yct_mall_item_02_28_02">景德镇玉竹陶瓷</string>
+	<string name="yct_mall_item_02_28_03">枫胜陶瓷</string>
+	<string name="yct_mall_item_02_28_04">乐铭瓷艺旗舰店</string>
+	<string name="yct_mall_item_02_29_01">古镇陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_29_02">家家乐陶瓷馆</string>
+	<string name="yct_mall_item_02_29_03">蚂蚁陶瓷工厂</string>
+	<string name="yct_mall_item_02_29_04">博观旗舰店</string>
+	<string name="yct_mall_item_02_30_01">五彩瓷铺</string>
+	<string name="yct_mall_item_02_30_02">圣大陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_30_03">翠品屋陶瓷企业官方店</string>
+	<string name="yct_mall_item_02_30_04">爱爵旗舰店</string>
+	<string name="yct_mall_item_02_31_01">景德镇1978陶瓷工作室</string>
+	<string name="yct_mall_item_02_31_02">明芳轩陶瓷</string>
+	<string name="yct_mall_item_02_31_03">景德镇琴琴陶瓷餐具</string>
+	<string name="yct_mall_item_02_31_04">煜乾家居旗舰店</string>
+	<string name="yct_mall_item_02_32_01">洛威奕匠专卖店</string>
+	<string name="yct_mall_item_02_32_02">景德镇艺瓷馆</string>
+	<string name="yct_mall_item_02_32_03">九龙仓旗舰店</string>
+	<string name="yct_mall_item_02_32_04">景德镇一方土陶瓷餐具</string>
+
+	<string name="yct_mall_item_02_33_01">景园餐具</string>
+	<string name="yct_mall_item_02_33_02">来伊份陶瓷馆</string>
+	<string name="yct_mall_item_02_33_03">久联陶瓷居家日用旗舰店</string>
+	<string name="yct_mall_item_02_33_04">喜陶陶瓷</string>
+	<string name="yct_mall_item_02_34_01">时韵陶瓷</string>
+	<string name="yct_mall_item_02_34_02">南极宝泽海专卖店</string>
+	<string name="yct_mall_item_02_34_03">瓷美餐具</string>
+	<string name="yct_mall_item_02_34_04">周和余陶瓷生活</string>
+	<string name="yct_mall_item_02_35_01">玉蝶旗舰店</string>
+	<string name="yct_mall_item_02_35_02">景德镇国贸陶瓷</string>
+	<string name="yct_mall_item_02_35_03">景丰陶瓷</string>
+	<string name="yct_mall_item_02_35_04">超华餐具</string>
+
+	<string name="yct_mall_item_02_36_01">博芝陶瓷馆</string>
+	<string name="yct_mall_item_02_36_02">景德镇唐龙陶瓷</string>
+	<string name="yct_mall_item_02_36_03">景德镇华玲陶瓷精品店</string>
+	<string name="yct_mall_item_02_36_04">不梵器物 慢慢生活</string>
+	<string name="yct_mall_item_02_37_01">瓷都陶瓷馆</string>
+	<string name="yct_mall_item_02_37_02">欣茂旗舰店</string>
+	<string name="yct_mall_item_02_37_03">乐享家具旗舰店</string>
+	<string name="yct_mall_item_02_37_04">喜多陶瓷馆</string>
+	<string name="yct_mall_item_02_38_01">非比寻陶</string>
+	<string name="yct_mall_item_02_38_02">景德镇友石轩陶瓷</string>
+	<string name="yct_mall_item_02_38_03">景德镇雅青陶瓷店</string>
+	<string name="yct_mall_item_02_38_04">明牌陶瓷</string>
+	<string name="yct_mall_item_02_39_01">景德镇华宇陶瓷</string>
+
+	<string name="yct_mall_item_02_39_02">景色陶瓷家居馆</string>
+	<string name="yct_mall_item_02_39_03">尚典陶瓷家居</string>
+	<string name="yct_mall_item_02_39_04">大魚美器</string>
+	<string name="yct_mall_item_02_40_01">瓷元素陶瓷生活馆</string>
+	<string name="yct_mall_item_02_40_02">红英陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_40_03">远业陶瓷旗舰店</string>
+	<string name="yct_mall_item_02_40_04">景德镇宝印陶瓷家居</string>
+	<string name="yct_mall_item_02_41_01">鹏飞陶瓷</string>
+
+	<string name="yct_mall_item_spt">三勤堂</string>
+	<string name="yct_mall_item_py">贝玉</string>
+    
+    <!-- 银铁通 -->
+    <string name="ytt_item_01_01_04">职工消费贷</string>
+    
+	<!-- 银烟通 -->
+	<string name="yyt_module_key">yyt</string>
+	<string name="yyt_main_title">银烟通</string>
+	<string name="yyt_finance_title">融资易达</string>
+	<string name="yyant_finance_item_01_title">经销易贷</string>
+	<string name="yyant_finance_item_01_01_01">消费易贷</string>
+	<string name="yyt_item_bottom_banner_01">江西烟草行业动态</string>
+
+	<string name="yyt_shop_title">烟草易购</string>
+	<string name="yyt_shop_item_01">烟草易购</string>
+	<string name="yyt_shop_item_02">烟草易付</string>
+	<string name="yyt_shop_item_03">烟草品牌</string>
+
+	<string name="yyt_life_title">生活易行</string>
+	<string name="yyt_lift_item_01_01_01">开户易达</string>
+	<string name="yyt_lift_item_01_01_02">办卡易达</string>
+	<string name="yyt_lift_item_01_01_03">汇兑易达</string>
+
+	<string name="yyt_lift_item_02_01_01">理财易达</string>
+	<string name="yyt_lift_item_02_01_02">保险易达</string>
+	<string name="yyt_lift_item_02_01_03">投资易达</string>
+
+	<string name="yyt_lift_item_03_01_01">民生易达</string>
+	<string name="yyt_lift_item_03_01_02">秘书易达</string>
+	<string name="yyt_lift_item_03_01_03">签证易达</string>
+	<string name="yyt_lift_item_03_02_01">旅游易达</string>
+	<string name="yyt_lift_item_03_02_02">车友易达</string>
+	<string name="yyt_lift_item_03_02_03">购物易达</string>
+
+	<!-- 银文通 -->
+	<string name="ywt_module_key">ywt</string>
+	<string name="ywt_main_title">银文通</string>
+	<string name="ywt_item_bottom_banner_01">江西文化产业公共服务平台</string>
+	<string name="ywt_item_01">文化e圈</string>
+	<string name="ywt_item_01_01_01">传统技艺</string>
+	<string name="ywt_item_01_01_02">传统美术</string>
+	<string name="ywt_item_01_01_03">传统戏曲</string>
+
+	<string name="ywt_item_01_02_01">赣鄱名俗</string>
+	<string name="ywt_item_01_02_02">传统舞蹈</string>
+	<string name="ywt_item_01_02_03">传统音乐</string>
+
+	<string name="ywt_item_02_01_01">名人佳话</string>
+	<string name="ywt_item_02_01_02">建筑考古</string>
+	<string name="ywt_item_02_01_03">当代江西</string>
+
+	<string name="ywt_item_03">文化e购</string>
+	<string name="ywt_item_03_01_01">文瓷购</string>
+	<string name="ywt_item_03_01_02">文化购</string>
+
+	<string name="ywt_item_03_02_f2">电商平台</string>
+	<string name="ywt_item_03_02_f2_01">德泰香樟</string>
+	<string name="ywt_item_03_02_f2_02">寻梦龙虎山</string>
+	<string name="ywt_item_03_02_f2_03">陶溪川</string>
+	<string name="ywt_item_03_02_f2_04">北斗文旅</string>
+
+	<string name="ywt_item_04">文化e贷</string>
+
+   	<!-- 银笔通 -->
+   	<string name="ybt_main_item_01">笔都风采</string>
+   	<string name="ybt_main_item_02">笔业商城</string>
+   	<string name="ybt_main_item_03">笔业金融</string>
+   	
+   	<!-- ybt_culture -->
+   	<string name="ybt_culture_item_name_01">名家名笔</string>
+   	<string name="ybt_culture_item_01_01_01">笔业文脉</string>
+   	<string name="ybt_culture_item_01_01_02">毛笔名家</string>
+   	<string name="ybt_culture_item_01_01_03">笔艺工序</string>
+   	<string name="ybt_culture_item_01_01_04">名笔鉴赏</string>
+   	
+   	<string name="ybt_culture_item_name_02">地方旅游</string>
+   	<string name="ybt_culture_item_02_01_01">毛笔博物馆</string>
+   	<string name="ybt_culture_item_02_01_02">周坊古村</string>
+   	<string name="ybt_culture_item_02_01_03">南宝寺</string>
+   	<string name="ybt_culture_item_02_01_04">静乐寺</string>
+   	<string name="ybt_culture_item_02_01_05">邹市农耕笔庄</string>
+   	<string name="ybt_culture_item_02_01_06">晏殊广场</string>
+   	
+   	
+   	<!-- ybt_finance -->
+   	<string name="ybt_finance_item_01_01_01">笔贷通</string>
+   	<string name="ybt_finance_item_01_01_02">笔创通</string>
+   	<string name="ybt_finance_item_01_01_03">个贷通</string>
+   	
+   	<string name="ybt_finance_item_02_01_01">开户通</string>
+   	<string name="ybt_finance_item_02_01_02">理财通</string>
+   	<string name="ybt_finance_item_02_01_03">财富通</string>
+   	<string name="ybt_finance_item_02_01_04">支付通</string>
+   	<string name="ybt_finance_item_02_01_05">汇兑通</string>
+   	<string name="ybt_finance_item_02_01_06">购汇通</string>
+   	<string name="ybt_finance_item_02_01_07">保险通</string>
+   	<string name="ybt_finance_item_02_01_08">证券通</string>
+   	
+   	<string name="ybt_finance_item_03_01_01">缴费通</string>
+   	<string name="ybt_finance_item_03_01_02">车惠通</string>
+   	<string name="ybt_finance_item_03_01_03">秘书通</string>
+   	<string name="ybt_finance_item_03_01_04">旅游通</string>
+   	
+   	<!-- ybt_mall -->
+   	<string name="ybt_mall_item_name_01">优质企业</string>
+   	
+   	<string name="ybt_mall_item_01_01_01">晋元堂</string>
+   	<string name="ybt_mall_item_01_01_02">周鹏程笔庄</string>
+   	<string name="ybt_mall_item_01_01_03">安邦笔庄</string>
+   	<string name="ybt_mall_item_01_01_04">双维专卖</string>
+   	<string name="ybt_mall_item_01_01_05">邹紫光阁</string>
+   	<string name="ybt_mall_item_01_01_06">四合笔庄</string>
+   	
+   	<string name="fpt_main_item_01">精准扶贫</string>
+   	<string name="fpt_item_01_01_01">个人扶贫贷</string>
+   	<string name="fpt_item_01_01_02">企业扶贫贷</string>
+   	<string name="fpt_item_01_01_03">旅游扶贫贷</string>
+   	<string name="fpt_item_01_01_04">扶贫商城</string>
+   	<string name="fpt_item_01_02_01">关爱互动平台</string>
+   	
+   	<string name="fpt_main_item_02">金融服务</string>
+   	<string name="fpt_item_02_01_01">开户通</string>
+   	<string name="fpt_item_02_01_02">办卡通</string>
+   	<string name="fpt_item_02_01_03">理财通</string>
+   	<string name="fpt_item_02_01_04">支付通</string>
+   	
+   	<string name="fpt_main_item_03">生活服务</string>
+   	<string name="fpt_item_03_01_01">生活助手</string>
+   	<string name="fpt_item_03_01_02">在线缴费</string>
+   	<string name="fpt_item_03_01_03">便利购物</string>
+   	<string name="fpt_item_03_01_04">健康管家</string>
+   	
+   	<string name="ywt_item_01_f2_01_01_01">文企贷</string>
+   	<string name="ywt_item_01_f2_01_01_02">文消贷</string>
+   	<string name="ywt_item_01_f2_01_01_03">文创贷</string>
+   	<string name="ywt_item_01_f2_01_01_04">文化金</string>
+   	
+   	<string name="yjt_item_00_01_01">军人开户通</string>
+   	<string name="yjt_item_00_01_02">军人办卡通</string>
+   	<string name="yjt_item_00_01_03">军人汇兑通</string>
+   	
+   	<string name="yjt_item_01_01_01">军人薪贷通</string>
+   	<string name="yjt_item_01_01_02">军人理财通</string>
+   	<string name="yjt_item_01_01_03">军人卡惠通</string>
+   	
+   	<string name="yjt_item_02_01_01">军人健康通</string>
+   	<string name="yjt_item_02_01_02">军人网购通</string>
+   	<string name="yjt_item_02_01_03">军人旅游通</string>
+   	
+   	
+   	<string name="yyt_main_item_01">中国药都</string>
+   	<string name="yyt_main_item_02">涉药金融</string>
+   	<string name="yyt_main_item_03">药都樟树</string>
+   	<!-- yyt_culture -->
+   	<string name="yyt_culture_item_01">樟邦文化</string>
+   	<string name="yyt_culture_item_01_01_01">药都历史</string>
+   	<string name="yyt_culture_item_01_01_02">炮制工序</string>
+   	
+   	<string name="yyt_culture_item_02">养生之道</string>
+   	<string name="yyt_culture_item_02_01_01">养生简介</string>
+   	<string name="yyt_culture_item_02_01_02">养生秘方</string>
+   	
+   	<string name="yyt_culture_item_03">药都旅游</string>
+   	<string name="yyt_culture_item_03_01_01">旅游景点</string>
+   	<string name="yyt_culture_item_03_01_02">药交会</string>
+   	
+   	<!-- yyt_finance -->
+   	<string name="yyt_finance_item_01">药流企业金融服务</string>
+   	<string name="yyt_finance_item_01_01_01">开户通</string>
+   	<string name="yyt_finance_item_01_01_02">中小通</string>
+   	<string name="yyt_finance_item_01_01_03">单证通</string>
+   	<string name="yyt_finance_item_01_01_04">保函通</string>
+   	
+   	<string name="yyt_finance_item_02">涉药个人金融服务</string>
+   	<string name="yyt_finance_item_02_01_01">个贷通</string>
+   	<string name="yyt_finance_item_02_01_02">创业通</string>
+   	<string name="yyt_finance_item_02_01_03">购汇通</string>
+   	<string name="yyt_finance_item_02_01_04">汇兑通</string>
+   	
+   	<string name="yyt_finance_item_03">涉药综合金融服务</string>
+   	<string name="yyt_finance_item_03_01_01">办卡通</string>
+   	<string name="yyt_finance_item_03_01_02">秘书通</string>
+   	<string name="yyt_finance_item_03_01_03">财富通</string>
+   	<string name="yyt_finance_item_03_01_04">理财通</string>
+
+	<!--银政通鹰潭-->
+	<string name="yzt_ytzq_module_title">银政通(鹰潭专属)</string>
+	<string name="yzt_ytzq_common_module_title">银政通</string>
+	<string name="yzt_ytzq_public_service_title">智慧金融服务</string>
+	<string name="yzt_ytzq_dedicated_service_title">智慧鹰潭服务</string>
+	<string name="yzt_ytzq_item_01">智慧金融服务</string>
+	<string name="yzt_ytzq_item_01_01_01">智慧开户</string>
+	<string name="yzt_ytzq_item_01_01_02">智慧单证</string>
+	<string name="yzt_ytzq_item_01_01_03">智慧保函</string>
+	<string name="yzt_ytzq_item_01_01_04">智慧融资</string>
+	<string name="yzt_ytzq_item_01_01_05">智慧创投</string>
+	<string name="yzt_ytzq_item_01_01_06">智慧票据</string>
+	<string name="yzt_ytzq_item_02">智慧新城服务</string>
+	<string name="yzt_ytzq_item_02_01_04">智慧旅游</string>
+	<string name="yzt_ytzq_item_03_01_02">智慧缴费</string>
+	<string name="yzt_ytzq_item_02_01_02">智慧医疗</string>
+	<string name="yzt_ytzq_item_02_01_03">智慧校园</string>
+	<string name="yzt_ytzq_item_02_01_07">智慧购物</string>
+	<string name="yzt_ytzq_item_02_01_05">智慧快贷</string>
+	<string name="yzt_ytzq_item_03">智慧生活服务</string>
+	<string name="yzt_ytzq_item_03_01_01">智慧秘书</string>
+	<string name="yzt_ytzq_item_03_01_03">智慧行车</string>
+	<string name="yzt_ytzq_item_03_01_04">智慧理财</string>
+	<string name="yzt_ytzq_item_03_01_05">智慧保险</string>
+	<string name="yzt_ytzq_item_02_01_01">智慧签证</string>
+	<string name="yzt_ytzq_item_03_01_06">智慧汇兑</string>
+
+	<string name="yzt_ytzq_dedicated_service_item00">物联投贷平台</string>
+	<string name="yzt_ytzq_dedicated_service_item01">物联产业平台</string>
+	<string name="yzt_ytzq_dedicated_service_item02">物联服务平台</string>
+
+	<string name="yzt_ytzq_industrial_platform_title">专属服务</string>
+
+	<string name="yzt_ytzq_industrial_platform_item_01_title">百业共享平台</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_01">三川智慧</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_02">美纳途箱包</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_03">泰华智慧</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_04">渥泰环保</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_05">新网科技</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_06">铜印象文化</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_07">中正信智能</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_08">广信新材料</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_09">江铜铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_10">红旗铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_11">凌云铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_12">同心铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_13">凯安智能</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_14">伟强铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_15">康成铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_16">金砖铜业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_17">大三元集团</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_18">三琦药业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_19">森泰药业</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_20">阳光照明</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_21">亨得利</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_22">鸽鸽食品</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_23">郑新初食品</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_24">果喜集团</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_25">凯斯通环保</string>
+	<string name="yzt_ytzq_industrial_platform_item_01_01_26">欧乐美科技</string>
+
+	<!-- 科贷通 -->
+	<string name="kdt_module_key">kdt</string>
+	<string name="kdt_module_title">科贷通</string>
+	<string name="kdt_quick_line_01">江西省科学技术厅</string>
+	<string name="kdt_quick_line_02">国家级 赣江新区</string>
+	<string name="kdt_quick_line_03">江西省科技创新公共服务平台</string>
+	<string name="kdt_cjwt">政策指导</string>
+	<string name="kdt_cpjs">产品介绍</string>
+	<string name="ll_kdt_qy_account_open">预约开户</string>
+	<string name="ll_kdt_qy_query">受理查询</string>
+	<string name="ll_kdt_qy_process">开户流程</string>
+
+	<!--银军通-->
+	<string name="ll_yjt_gr_account_open">军人预约开户</string>
+	<string name="ll_yjt_gr_query">编号查询</string>
+	<string name="ll_yjt_gr_process">军人开户流程</string>
+	<string name="ll_yjt_gr_grtykh">个人特邀开户</string>
+</resources>

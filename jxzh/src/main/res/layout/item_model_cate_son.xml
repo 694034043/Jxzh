@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="1dip"
+        android:background="#dcdcdc"
+        android:layout_alignParentRight="true"
+        android:layout_height="@dimen/j80dp" />
+    <LinearLayout
+        android:id="@+id/lin_detail"
+        android:layout_toLeftOf="@+id/iv_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/j80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mdx.framework.widget.MImageView
+            android:id="@+id/lv_logo"
+            android:layout_width="@dimen/j40dp"
+            android:layout_height="@dimen/j40dp"
+            android:layout_marginTop="@dimen/j5dp"
+            android:scaleType="fitXY"
+            android:src="@color/G1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/j5dp"
+            android:layout_marginTop="@dimen/j5dp"
+            android:text="呀呀呀呀呀呀呀"
+            android:textColor="@color/E3"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_bottom"
+        android:layout_width="match_parent"
+        android:background="#dcdcdc"
+        android:layout_below="@+id/lin_detail"
+        android:layout_height="1dip" />
+</RelativeLayout>
+
+
+</LinearLayout>

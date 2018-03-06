@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="@null"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/lLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="8dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/yfx_records_01"
+                    android:padding="4dp"
+                    android:text="  用款历史（已结清贷款）"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/textview_little_bigger_size" />
+
+                <ImageView
+                    android:id="@+id/ivMoreUse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/yfx_records_more"
+                    android:textSize="@dimen/textview_little_bigger_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+
+            <com.bocop.jxplatform.view.MyListView
+                android:id="@+id/lvUseLoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/background_gray"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/translucence"
+                android:scrollbars="@null" >
+            </com.bocop.jxplatform.view.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/background_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/yfx_records_01"
+                    android:padding="4dp"
+                    android:text="  还款历史（未结清贷款）"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/textview_little_bigger_size" />
+
+                <ImageView
+                    android:id="@+id/ivMoreRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/yfx_records_more"
+                    android:textSize="@dimen/textview_little_bigger_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+
+            <com.bocop.jxplatform.view.MyListView
+                android:id="@+id/lvRepay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/background_gray"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/translucence"
+                android:scrollbars="@null" >
+            </com.bocop.jxplatform.view.MyListView>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="8dp" -->
+            <!-- android:layout_marginRight="8dp" -->
+            <!-- android:layout_marginTop="8dp" -->
+            <!-- android:background="@color/background_gray" -->
+            <!-- android:padding="3dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="还款清单" -->
+            <!-- android:textSize="@dimen/textview_little_bigger_size" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/ivMoreRecords" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="24dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:src="@drawable/yfx_records_more" -->
+            <!-- android:textSize="@dimen/textview_little_bigger_size" -->
+            <!-- android:visibility="gone" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <com.bocop.jxplatform.view.MyListView -->
+            <!-- android:id="@+id/lvApply" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="8dp" -->
+            <!-- android:divider="@color/translucence" -->
+            <!-- android:listSelector="@color/translucence" -->
+            <!-- android:scrollbars="@null" > -->
+            <!-- </com.bocop.jxplatform.view.MyListView> -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <RelativeLayout
+        android:id="@+id/reLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="16dp"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/rlBG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rlAdRoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/ivSingleImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home_rollimage"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/rltAd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vpAd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.boc.jx.view.indicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@android:color/transparent"
+                            android:padding="10dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                
+                <ImageView 
+                    android:id="@+id/ivSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlAdRoot"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/yfx_trains_steps"/>
+
+                <LinearLayout
+                    android:id="@+id/llBG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ivSteps"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvFptText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <LinearLayout
+                        android:id="@+id/llFNT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/redText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="特邀客户尊享；"
+                                android:textColor="@color/TextColor_subsidiary"
+                                android:textSize="@dimen/textview_normal_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/redText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="网上申请提款；"
+                                android:textColor="@color/TextColor_subsidiary"
+                                android:textSize="@dimen/textview_normal_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/redText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="贷款随借随还；"
+                                android:textColor="@color/TextColor_subsidiary"
+                                android:textSize="@dimen/textview_normal_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/redText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="按天计息还款；"
+                                android:textColor="@color/TextColor_subsidiary"
+                                android:textSize="@dimen/textview_normal_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvFptSubText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlAdRoot"
+                        android:padding="16dp"
+                        android:text="“扶贫通”是助推扶贫攻坚，面向贫困地区特邀客户的信贷服务，凡被邀客户可在线提交申请。\n\n贷款不得用于法律法规、监管规定、国家政策禁止银行贷款投入的项目、用途。"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+                <Button
+            android:id="@+id/btnApply"
+            style="@style/BigButton"
+            android:layout_below="@id/llBG"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="下一步"
+            android:visibility="visible" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

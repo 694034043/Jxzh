@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="selected_item">
+        <item>易互通</item>
+        <item>活动</item>
+        <item>个人</item>
+    </string-array>
+    <string-array name="cartype_item">
+        <item>小型汽车</item>
+        <item>大型汽车</item>
+        <item>外箱汽车</item>
+        <item>两、三轮摩托车</item>
+        <item>轻便摩托车</item>
+        <item>农用运输车</item>
+        <item>拖拉机</item>
+        <item>挂车</item>
+    </string-array>
+    <string-array name="xmsremind">
+        <item>我的消息</item>
+        <item>金融信息</item>
+        <item>缴费提醒</item>
+        <item>自定义提醒</item>
+    </string-array>
+    <string-array name="xmsjrservice">
+        <item>存贷款利率</item>
+        <item>外汇牌价</item>
+        <item>信用卡积分</item>
+        <item>和讯财经</item>
+    </string-array>
+    <string-array name="xmsotherser">
+        <item>天气预报</item>
+        <item>美食团购</item>
+        <item>家政服务</item>
+        <item>江西电影网</item>
+        <item>快递查询</item>
+        <item>在线翻译</item>
+        <item>头条新闻</item>
+        <item>在线字典</item>
+    </string-array>
+    <string-array name="xmsnecessary">
+        <item>打车服务</item>
+        <item>购飞机票</item>
+        <item>购火车票</item>
+        <item>购汽车票</item>
+        <item>地图服务</item>
+        <item>酒店服务</item>
+        <item>航班动态</item>
+        <item></item>
+    </string-array>
+    <!-- 首页appitem名称集合 -->
+    <string-array name="appname_array">
+        <item>车惠通</item>
+        <item>秘书通</item>
+        <item>理财通</item>
+        <item>缴费通</item>
+        <item>健康通</item>
+        <item>外购通</item>
+        <item>个贷通</item>
+        <item>签证通</item>
+        <item>财富通</item>
+        <item>办卡通</item>
+        <item>卡惠通</item>
+        <item>特贷通</item>
+        <item>售汇通</item>
+        <item>购汇通</item>
+        <item>消贷通</item>
+        <item>优品通</item>
+        <!-- <item>中银易商</item> -->
+        <!-- <item>易出行</item> -->
+    </string-array>
+    <string-array name="life">
+        <item>铁路项目贷</item>
+        <item>铁路中小贷</item>
+        <item>职工公积贷</item>
+        <item>职工消费贷</item>
+
+        <!--
+             <item>鸿运通</item>
+        <item>秘书通</item>
+        <item>车惠通</item>
+        <item>旅游通</item>
+        <item>缴费通</item>
+        <item>签证通</item>
+        <item>健康通</item>
+        <item>校园通</item>
+        <item>出行通</item>
+        <item>票务通</item>
+        -->
+        <!-- <item>小游戏</item> -->
+    </string-array>
+    <string-array name="finance">
+        <item>开户通</item>
+        <item>办卡通</item>
+        <item>个贷通</item>
+        <item>理财通</item>
+        <item>购汇通</item>
+        <item>售汇通</item>
+        <item>缴费通</item>
+        <item>财富通</item>
+    </string-array>
+    <string-array name="zyt">
+        <item>开户通</item>
+        <item>企贷通</item>
+        <item>中小通</item>
+        <item>企付通</item>
+        <item>单证通</item>
+        <item>保函通</item>
+        <item>报关通</item>
+        <item>车商通</item>
+    </string-array>
+    <string-array name="facility">
+        <item>开户通</item>
+        <item>企贷通</item>
+        <item>企付通</item>
+        <item>单证通</item>
+        <item>保函通</item>
+        <item>报关通</item>
+        <item>航运通</item>
+        <item>车商通</item>
+    </string-array>
+    <string-array name="shopping">
+        <item>优品通</item>
+        <item>卡惠通</item>
+        <item>外购通</item>
+        <item></item>
+    </string-array>
+
+    <!-- 小秘书首页面 -->
+    <string-array name="xmssign">
+        <item>签约</item>
+        <item>签约一览</item>
+    </string-array>
+    <string-array name="xmsbankser">
+        <item>ATM分布</item>
+        <item>网点查询</item>
+        <item>网点预约</item>
+        <item>信用卡积分</item>
+        <item>存贷款利率</item>
+        <item>外汇牌价</item>
+        <item>基金净值</item>
+        <item>中银资讯</item>
+    </string-array>
+    <string-array name="xmsbankser1">
+        <item>水费</item>
+        <item>电费</item>
+        <item>燃气费</item>
+        <item>有线电视</item>
+        <item>移动通讯</item>
+        <item>存款理财</item>
+    </string-array>
+
+    <!-- 生活服务日志 -->
+    <string-array name="homelifelog_array">
+        <item>hyt</item>
+        <!-- 鸿运通 -->
+        <item>mst</item>
+        <!-- 秘书通 -->
+        <item>cht</item>
+        <!-- 车惠通 -->
+        <item>lyt</item>
+        <!-- 旅游通 -->
+        <item>jft</item>
+        <!-- 缴费通 -->
+        <item>qzt</item>
+        <!-- 签证通 -->
+        <item>jkt</item>
+        <!-- 健康通 -->
+        <item>xyt</item>
+        <!-- 校园通 -->
+        <item>xyt</item>
+        <!-- 校园通 -->
+        <item>xyt</item>
+        <!-- 校园通 -->
+        <item>xyt</item>
+        <!-- 校园通 -->
+    </string-array>
+    <!-- 金融服务日志 -->
+    <string-array name="homefinacelog_array">
+        <item>khtcard</item>
+        <!-- 开户通 -->
+        <item>bkt</item>
+        <!-- 办卡通 -->
+        <item>lct</item>
+        <!-- 理财通 -->
+        <item>cft</item>
+        <!-- 财富通 -->
+
+        <item>sht</item>
+        <!-- 售汇通 -->
+        <item>ght</item>
+        <!-- 购汇通 -->
+        <item>blank</item>
+        <!--  -->
+        <item>blank</item>
+        <!--  -->
+
+    </string-array>
+    <string-array name="homefacilitylog_array">
+        <item>zxt</item>
+        <!-- 企贷通 -->
+        <item>fpt</item>
+        <!-- 扶贫通 -->
+        <item>fnt</item>
+        <!-- 扶农通 -->
+        <item>gdt</item>
+        <!-- 个贷通 -->
+
+        <item>gjt</item>
+        <!-- 公积通 -->
+        <item>zdt</item>
+        <!-- 专贷通 -->
+        <item>blank</item>
+        <!--  -->
+        <item>blank</item>
+        <!--  -->
+    </string-array>
+
+    <!-- 消费购物日志 -->
+    <string-array name="homeshoppinglog_array">
+        <item>ypt</item>
+        <!-- 优品通 -->
+        <item>kht</item>
+        <!-- 卡惠通 -->
+        <item>zqt</item>
+        <!-- 证券通 -->
+        <item>blank</item>
+        <!-- 证券通 -->
+    </string-array>
+
+    <!-- 首页日志事件集合 -->
+    <string-array name="homepagelog_array">
+        <item>cht</item>
+        <!-- 车惠通 -->
+        <item>mst</item>
+        <!-- 秘书通 -->
+        <item>lct</item>
+        <!-- 理财通 -->
+        <item>jft</item>
+        <!-- 缴费通 -->
+        <item>jkt</item>
+        <!-- 健康通 -->
+        <item>wgt</item>
+        <!-- 外购通 -->
+        <item>gdt</item>
+        <!-- 个贷通 -->
+        <item>qzt</item>
+        <!-- 签证通 -->
+        <item>cft</item>
+        <!-- 财富通 -->
+        <item>bkt</item>
+        <!-- 办卡通 -->
+        <item>kht</item>
+        <!-- 卡惠通 -->
+        <item>tdt</item>
+        <!-- 消贷通 -->
+        <item>sht</item>
+        <!-- 售汇通 -->
+        <item>ght</item>
+        <!-- 购汇通 -->
+        <item>xdt</item>
+        <!-- 消贷通 -->
+        <item>ypt</item>
+        <!-- 优品通 -->
+        <item>zqt</item>
+        <!-- 证券通 -->
+        <!-- <item>zyys</item>	中银易商 -->
+        <!-- <item>易出行</item> -->
+    </string-array>
+    <!-- 首页日志事件集合 -->
+    <string-array name="homepageimagelog_array">
+        <item>wzcl</item>
+        <!-- 违章处理 -->
+        <item>jft</item>
+        <!-- 缴费通 -->
+        <item>lct</item>
+        <!-- 理财通 -->
+        <item>ypt</item>
+        <!-- 优品通 -->
+        <item>kht</item>
+        <!-- 卡惠通 -->
+        <item>jkt</item>
+        <!-- 健康通 -->
+    </string-array>
+    <string-array name="jdz">
+        <item>开户通</item>
+        <item>企贷通</item>
+        <item>企付通</item>
+        <item>单证通</item>
+        <item>保函通</item>
+        <item>报关通</item>
+        <item>航运通</item>
+        <item>车商通</item>
+    </string-array>
+    <string-array name="ytt2">
+          <item>鸿运当头</item>
+        <item>在线开户</item>
+        <item>余额理财</item>
+        <item>财富管家</item>
+
+        <!--
+        <item>鸿运当头</item>
+        <item>开户通</item>
+        <item>办卡通</item>
+        <item>理财通</item>
+        <item>财富通</item>
+        <item>售汇通</item>
+        <item>购汇通</item>
+        -->
+    </string-array>
+    <string-array name="ytt3">
+      
+        <item>在线缴费</item>
+        <item>车主优惠</item>
+        <item>便捷旅游</item>
+        <item>生活助手</item>
+        <!--
+        <item>公积通</item>
+        <item>购车通</item>
+        <item>装修通</item>
+        <item>消费通</item>
+        -->
+    </string-array>
+    <string-array name="ytt4">
+        
+         <item>精品购</item>
+         <item>海淘购</item>
+         <item>聚惠购</item>
+        <!--
+        <item>优品通</item>
+        <item>外购通</item>
+        -->
+
+    </string-array>
+    <string-array name="spingarr">
+        <item>赣江新区支行</item>
+        <item>景德镇支行</item>
+    </string-array>
+    
+    <string-array name="moduleName">
+        <item>银区通</item>
+        <item>银政通</item>
+        <item>银铁通</item>
+        <item>银瓷通</item>
+        <item>银烟通</item>
+        <item>银文通</item>
+        <item>银供通</item>
+        <item>扶贫通</item>
+        <item>银军通</item>
+        <item>银药通</item>
+        <item>银笔通</item>
+    </string-array>
+    <array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+    <array name="branch">
+        <item>中国银行</item>
+        <item>中国农业银行</item>
+        <item>中国工商银行</item>
+        <item>中国建设银行</item>
+    </array>
+</resources>

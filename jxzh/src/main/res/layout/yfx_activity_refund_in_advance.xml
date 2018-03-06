@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="应还利息:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvInterest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="应还本金:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvPrincipal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="本息合计:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="逾期金额:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvOverdueAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvOverdueTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="贷款金额:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvLoanAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="剩余金额:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvRemainToRefund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="元" />
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="还款卡号:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <LinearLayout -->
+                <!-- style="@style/text_view_shape" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_gravity="center_vertical" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:orientation="horizontal" -->
+                <!-- android:paddingRight="8dp" > -->
+
+                <TextView
+                    android:id="@+id/tvRefundCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="XXXX"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="账号余额:  "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvAccBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tvRefundAmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="还款金额   "
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <EditText
+                    android:id="@+id/etRefundSum"
+                    style="@style/edit_text_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/swRefundAll"
+                    android:layout_toRightOf="@+id/tvRefundAmt"
+                    android:hint="请输入金额"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="8dp"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <!-- <ToggleButton -->
+                <!-- android:id="@+id/tbRefundAll" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:background="@drawable/yfx_selector_toggle_button" -->
+                <!-- android:textColor="@color/white" -->
+                <!-- android:textOff="非全额" -->
+                <!-- android:textOn="全额还款" -->
+                <!-- android:textSize="@dimen/textview_normal_size" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/tvRefundAll" -->
+                <!-- style="@style/edit_text_shape" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentRight="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginLeft="8dp" -->
+                <!-- android:layout_marginRight="16dp" -->
+                <!-- android:background="@drawable/yfx_selector_stroke_green" -->
+                <!-- android:gravity="center" -->
+                <!-- android:paddingLeft="5dp" -->
+                <!-- android:paddingRight="5dp" -->
+                <!-- android:text="全额还款" -->
+                <!-- android:textColor="@color/white" -->
+                <!-- android:textSize="@dimen/textview_normal_size" /> -->
+
+                <com.bocop.yfx.view.SlideSwitch
+                    android:id="@+id/swRefundAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    app:isOpen="true"
+                    app:shape="circle"
+                    app:swTextSize="12sp"
+                    app:textOff="部分还款"
+                    app:textOn="全额还款" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/tvRefundPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:text="剩余还款计划"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/textview_small_size" 
+                android:background="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/btnApply"
+                style="@style/BigButton"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:text="确认提交" />
+
+            <TextView
+                android:id="@+id/tvExplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="说明: 还款金额不可以低于本期利息"
+                android:textColor="@color/depth_red"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,328 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    
+
+    <ScrollView
+        android:id="@+id/svBaseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/profIdentity"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvProfIdentity"
+                    style="@style/text_view_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:drawableRight="@drawable/down"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/phoneNum"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <EditText
+                    android:id="@+id/etPhoneNum"
+                    style="@style/edit_text_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/companyType"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvCompanyType"
+                    style="@style/text_view_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:drawableRight="@drawable/down"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/workYear"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <LinearLayout
+                    style="@style/edit_text_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etWorkYear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="8dp"
+                        android:text="@string/year" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/monthPay"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <LinearLayout
+                    style="@style/edit_text_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etMonthPay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="8dp"
+                        android:text="@string/rmb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/monthIncome"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <LinearLayout
+                    style="@style/edit_text_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etMonthIncome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="8dp"
+                        android:text="@string/rmb" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/houseProp"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <TextView
+                    android:id="@+id/tvHouseProp"
+                    style="@style/text_view_selector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:drawableRight="@drawable/down"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/houseValue"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <LinearLayout
+                    style="@style/edit_text_shape"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etHouseValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:paddingLeft="8dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="8dp"
+                        android:text="@string/wan" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </View>
+
+    <Button
+        android:id="@+id/btnToInfoCom"
+        style="@style/BigButton_Margin"
+        android:text="@string/next"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/red"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.bocop.jxplatform.view.BackButton
+            android:id="@+id/iv_imageLeft"
+            style="@style/title_image_style"
+            android:layout_gravity="left|center_vertical"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:src="@drawable/title_arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+        <ImageView
+            android:id="@+id/iv_Item"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_secretary_sign"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_toLeftOf="@+id/iv_Item"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_secretary_refresh"/>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

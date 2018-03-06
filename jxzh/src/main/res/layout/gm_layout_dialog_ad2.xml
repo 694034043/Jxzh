@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="88dp"
+        android:src="@drawable/gm_ad_bg2" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/gm_close" />
+
+    <ImageView
+        android:id="@+id/ivPacket"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/ad_checkout_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivBg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textSize="18sp"
+        android:text="请进入流量管理系统查看"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivBg"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ad_tips" />
+
+    <View
+        android:id="@+id/vCenterLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivBg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/vCenterLine"
+        android:text="500"
+        android:textColor="@color/redText"
+        android:textSize="40sp" />
+
+</RelativeLayout>

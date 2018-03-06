@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <com.bocop.zyt.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.bocop.zyt.jx.view.LoadingView>
+
+    <LinearLayout
+        android:id="@+id/llhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_progress"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:src="@drawable/zyyr_info1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

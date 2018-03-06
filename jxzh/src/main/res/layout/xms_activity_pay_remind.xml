@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+     
+    <TextView
+         android:layout_width="match_parent"
+         android:layout_height="12dp"
+         android:background="@color/background_gray" />
+
+    <GridView
+        android:id="@+id/gvBankSer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@color/background_gray"
+        android:numColumns="4"
+        android:verticalSpacing="1dp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="*请点击以上图标进行签约，实现对应缴费项目欠费信息的主动提醒功能。"
+        android:textColor="@color/colorContentText"
+        android:textSize="14sp" />
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="*签约后您将授权中国银行查询您的欠费信息，提醒的欠费数据仅作为参考，请以合作方实际数据为准。"
+        android:textColor="@color/colorContentText"
+        android:textSize="14sp" />
+
+</LinearLayout>

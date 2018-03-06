@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BigButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/xms_selector_btn_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_normal_size</item>
+    </style>
+
+    <style name="BigButton_Margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/xms_selector_btn_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_normal_size</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="SmallButton_Margin">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/xms_selector_btn_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_normal_size</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    <style name="SmallButton_Blue">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/zyyr_selector_btn_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_normal_size</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <!-- CircleProgress -->
+    <style name="progressbar_circle">
+        <item name="android:indeterminateDrawable">@drawable/yfx_rotate_progressbar_circle</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+
+    <!-- SeekBar -->
+    <style name="CustomFloaterTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:shadowColor">#FFFF0000</item>
+        <item name="android:shadowRadius">4</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">3</item>
+    </style>
+
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+
+    <style name="Widget.DiscreteSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/yfx_dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/yfx_dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/yfx_dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
+    </style>
+
+    <style name="Widget.DiscreteIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <!-- 文本显示框 -->
+    <style name="text_view_shape">
+        <item name="android:background">@drawable/xms_shape_edit</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+    <!-- 文本输入框 -->
+    <style name="edit_text_shape">
+        <item name="android:background">@drawable/xms_shape_edit</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingTop">7dp</item>
+    </style>
+    <!-- 文本选择框 -->
+    <style name="text_view_selector">
+        <item name="android:background">@drawable/xms_selector_text</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+    </style>
+	<style name="red_bigButton">
+       <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/xms_shape_red_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_normal_size</item>
+    </style>
+</resources>

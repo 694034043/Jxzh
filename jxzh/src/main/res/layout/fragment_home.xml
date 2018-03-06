@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp" >
+
+            <ImageView
+                android:id="@+id/ivSingleImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rltAd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vpAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.boc.jx.view.indicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ytt_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imgView1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/hcbac" />
+
+            <TextView
+                android:id="@+id/tv_item_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:paddingBottom="3dp"
+                android:text="生活服务"
+                android:textColor="@color/homered"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/homered" />
+        -->
+
+        <com.bocop.jxplatform.view.MyGridView
+            android:id="@+id/gvLifeSer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@color/gray"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" >
+        </com.bocop.jxplatform.view.MyGridView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/iv_line_2"
+            android:background="#929CA9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ytt_title2"
+            android:background="@color/GDVWBG" >
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/hcbac"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:paddingBottom="3dp"
+                android:text="企业金融服务"
+                android:textColor="@color/homered"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/homered" />
+        -->
+
+        <com.bocop.jxplatform.view.MyGridView
+            android:id="@+id/gvFacilitySer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@color/gray"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" >
+        </com.bocop.jxplatform.view.MyGridView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/iv_line_3"
+            android:background="#929CA9" />
+        <!-- 授信服务 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ytt_title3"
+            android:background="@color/GDVWBG" >
+
+            <ImageView
+                android:id="@+id/imgView3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/hcbac"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:paddingBottom="3dp"
+                android:text="个人金融服务"
+                android:textColor="@color/homered"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/homered" />
+        -->
+
+        <com.bocop.jxplatform.view.MyGridView
+            android:id="@+id/gvFinanceSer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@color/gray"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" >
+        </com.bocop.jxplatform.view.MyGridView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/iv_line_4"
+            android:background="#929CA9" />
+
+        <RelativeLayout
+            android:id="@+id/ytt_title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/GDVWBG" >
+
+            <ImageView
+                android:id="@+id/imgView4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/hcbac" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:paddingBottom="3dp"
+                android:text="消费购物"
+                android:textColor="@color/homered"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <com.bocop.jxplatform.view.MyGridView
+            android:id="@+id/gvShopping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:horizontalSpacing="1dp"
+            android:listSelector="@color/gray"
+            android:numColumns="4"
+            android:verticalSpacing="1dp" >
+        </com.bocop.jxplatform.view.MyGridView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:id="@+id/iv_line_5"
+            android:background="@color/GDVWBG" />
+
+        <com.bocop.jxplatform.view.MyGridView
+            android:id="@+id/gvImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:horizontalSpacing="1dp"
+            android:listSelector="#FFFFFF"
+            android:numColumns="1"
+            android:verticalSpacing="1dp" >
+        </com.bocop.jxplatform.view.MyGridView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_illegals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:text="一站式处理"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="10dp"
+                        android:text="查违章,出罚单,缴罚款"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:src="@drawable/icon_illegal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#f5f5f5" />
+
+            <LinearLayout
+                android:id="@+id/ll_secretary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:text="秘书通"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="10dp"
+                        android:text="民生缴费多,
+                                                             欠费我提醒"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:src="@drawable/icon_secretarys" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_financial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:text="理财小管家"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="10dp"
+                        android:text="无门槛,随时赎,收益高"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:src="@drawable/icon_financial" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#f5f5f5" />
+
+            <LinearLayout
+                android:id="@+id/ll_helper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:text="车主小帮手"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="10dp"
+                        android:text="加油卡九八折"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="30dp"
+                        android:src="@drawable/icon_helper" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</ScrollView>

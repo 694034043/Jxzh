@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_new"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <!-- 页面2：绑定驾驶证 -->
+
+        <LinearLayout
+            android:id="@+id/ll_traffic_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:textSize="@dimen/textview_small_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="交通自助违法处理需要绑定驾驶证信息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+                
+                <TextView style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:textSize="@dimen/textview_normal_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="6dp"
+                        android:text="身份证号："
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="12dp"
+                        android:maxLength="18"
+                        android:layout_weight="6"
+                        android:background="@drawable/bg_edittext"
+                        android:hint=""
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <TextView style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:textSize="@dimen/textview_normal_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="6dp"
+                        android:text="@string/filenum"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edfilenum_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="12dp"
+                        android:maxLength="12"
+                        android:layout_weight="6"
+                        android:background="@drawable/bg_edittext"
+                        android:hint=""
+                        android:padding="4dp" />
+                </LinearLayout>
+
+                <TextView style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
+                        android:padding="6dp"
+                        android:text="新手机号："
+                        android:textColor="@color/black" 
+                        android:textSize="@dimen/textview_normal_size"/>
+
+                    <EditText
+                        android:id="@+id/tv_addlicetel"
+                        style="@style/normal_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/bg_edittext"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:padding="4dp"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <TextView style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <EditText
+                        android:id="@+id/et_telliceverify_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="6dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#D0D0D0"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <LinearLayout
+                        android:id="@+id/llt_tellicesend_msg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/send_btn_selector"
+                        android:gravity="center"
+                        android:padding="8dp" >
+
+                        <RelativeLayout
+                            android:id="@+id/rlt_telliceloading"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="gone" >
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_tellicesend_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="获取验证码"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView style="@style/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:textSize="@dimen/textview_small_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/kindlyremandfile"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btlicenseadd"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/blue_button_selector"
+                        android:gravity="center"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/button_normal_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone_tip"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:text="温馨提示"
+                        android:textColor="@color/phone_tip"
+                        android:textSize="@dimen/textview_normal_size" />
+                     
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="10dp"
+                        android:text="成功提交后，您所填写的手机号码信息将替换您驾驶证中的手机号码。"
+                        android:textColor="@color/phone_tip"
+                        android:textSize="@dimen/textview_small_size" />
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="6dp"
+                        android:text="在办理过程中，请您如实填写相关信息，对填写资料的真实性、有效性负责，对于提供虚假信息产生的一切责任将由申请人承担。"
+                        android:textColor="@color/phone_tip"
+                        android:textSize="@dimen/textview_small_size" />
+                </LinearLayout>
+                 
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

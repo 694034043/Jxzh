@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Base TempPath="yht" BaseUri="http://118.31.14.52:8080/yhtbackstage" AppId="1" UseSdcard="true" UpdateUri="http://app.udows.com:82/version/mobile?methodno=MUpdate">
+
+
+    <!-- http://139.196.200.238:888/shfw -->
+
+    <!--page                  分页参数名    
+        pagesize              每页数量参数名   
+        MaxImageSize          最大图片缓存   
+        MaxFileSize  		     最大文件缓存  
+        MaxDataSize           最大接口缓存空间  
+        WebServiceNamespace   WebService的命名空间名称   
+        WebServiceUrl         WebService接口的 url-->
+    <!-- <param name="page">index</param> -->
+    <!-- <param name="pagesize">size</param> -->
+
+
+    <!-- 最大图片缓存 -->
+    <!-- <param name="MaxImageSize">0</param> -->
+    <!-- <param name="MaxDataSize">0</param> -->
+    <!-- <param name="MaxFileSize">0</param> -->
+    <!-- <param name="MaxVoidSize">0</param> -->
+<!-- com.work.geg.frg_shouhuodizhi.FrgLoading -->
+    <param name="ErrorUpdateUrl">http://app.udows.com:82/version/mobile?methodno=MUpdateError</param>
+    <!-- 初始fragment -->
+    <param name="DefaultFragment">com.bocop.zyt.bocop.jxplatform.activity.SplashActivity</param>
+    
+    <param name="id">value</param>
+     <param name="source">0</param>
+    <!-- webservicenamespace -->
+    <param name="WebServiceNamespace">value</param>
+    
+     <!-- WebServiceUrl -->
+    <param name="WebServiceUrl">value</param>
+
+    
+</Base>

@@ -1,0 +1,335 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/xms_icon_df_small" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="left"
+            android:text="水费"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        style="@style/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缴费地区"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_PayArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:text="请选择"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+    </LinearLayout>
+<View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缴费单位"
+               android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_PayUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="请选择"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+     <LinearLayout
+        android:id="@+id/ll_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缴费方式"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="用户号码"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_userCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户号码"
+             android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_UserCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:textSize="16sp" 
+            android:textColor="@color/colorContentText"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_Extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_Perch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="　　　　"
+            android:textSize="16sp"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_Extra"
+            android:paddingLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="智能卡号\n/上网账号"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_Extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tv_Perch"
+            android:background="@null"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+        <View android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/et_Extra"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            style="@style/line"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒日"
+            android:paddingRight="15dp"
+             android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_OrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="请选择"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+    </LinearLayout>
+  <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_PinPaiN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:visibility="gone">
+   <TextView
+            android:id="@+id/tv_Perch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:gravity="center"
+            android:text="缴费项目"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_PinPaiN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_toRightOf="@+id/tv_Perch1"
+            android:padding="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorContentText"
+            android:text="请选择"
+            android:textSize="16sp" />
+          <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_PinPaiN"
+        style="@style/line"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_DeviceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+            <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="8dp"
+              android:paddingRight="16dp"
+              android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备类型"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_DeviceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:text="请选择"
+            android:textColor="@color/colorContentText"
+            android:textSize="16sp" />
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line"/>
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/btn_Apply"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="100dp"
+        style="@style/red_bigButton"
+        android:text="提交" />
+
+</LinearLayout>

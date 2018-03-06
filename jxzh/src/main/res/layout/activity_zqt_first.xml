@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <com.bocop.zyt.jx.ab.view.sliding.AbSlidingPlayView
+                android:id="@+id/zqt_photos"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal" >
+            </com.bocop.zyt.jx.ab.view.sliding.AbSlidingPlayView>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="中银证券"
+                    android:textColor="@color/red"
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_bg"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_01_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_zqt_gshq"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="股市行情"/>
+                    </LinearLayout>
+                    
+                    <View 
+                        android:layout_width="1sp"
+                        android:layout_height="match_parent"
+                        android:background="#e5e5e5"/>
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_01_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_zqt_cjzx"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="财经资讯"/>
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_01_02_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_zqt_zqkh"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="证券开户"/>
+                    </LinearLayout>
+                    
+                    <View 
+                        android:layout_width="1sp"
+                        android:layout_height="match_parent"
+                        android:background="#e5e5e5"/>
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_01_02_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_zqt_zqjy"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="证券交易"/>
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+                <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="#e5e5e5"/>
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="其他合作"
+                    android:textColor="@color/red"
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_bg"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_02_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/logo_guosheng"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="国胜证券"/>
+                    </LinearLayout>
+                    
+                    <View 
+                        android:layout_width="1sp"
+                        android:layout_height="match_parent"
+                        android:background="#e5e5e5"/>
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_02_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/logo_haitong"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="海通证券"/>
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_02_02_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/logo_huatai"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="华泰证券"/>
+                    </LinearLayout>
+                    
+                    <View 
+                        android:layout_width="1sp"
+                        android:layout_height="match_parent"
+                        android:background="#e5e5e5"/>
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_item_02_02_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <ImageView 
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/icon_qzt_dongbei"/>
+                        
+                        <TextView 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="东北证券"/>
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+                <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="#e5e5e5"/>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zqt_bottom">
+                    
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="15dp"
+                    android:text="免责声明：此功能是我行为了方便您进行证券投资而为您与券商之间搭建的开户渠道，不代表我行主动引导您进行证券交易，并对您的交易盈亏负责。请您充分了解股市投资风险，谨慎入市。本服务项下所有链接和二维码均由证券公司提供，如在下载、安装app过程中产生问题，请详询证券公司。"
+                    android:textSize="@dimen/textview_small_size" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:src="@drawable/logo_boc" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhongyinguoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lineSpacingMultiplier="1"
+                    android:paddingLeft="10dp"
+                    android:text="中银国际证券有限责任公司"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <TextView style="@style/line"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/logo_haitong" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/haitong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="10dp"
+                        android:text="海通证券股份有限公司"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/line"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/logo_guosheng" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/guosheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="10dp"
+                        android:text="国盛证券有限责任公司"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/line"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_qzt_dongbei" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dongbei"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="10dp"
+                        android:text="东北证券"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/line"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/logo_huatai" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/huatai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:lineSpacingMultiplier="1"
+                        android:paddingLeft="10dp"
+                        android:text="华泰证券"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="15dp"
+                    android:text="免责声明：此功能是我行为了方便您进行证券投资而为您与券商之间搭建的开户渠道，不代表我行主动引导您进行证券交易，并对您的交易盈亏负责。请您充分了解股市投资风险，谨慎入市。本服务项下所有链接和二维码均由证券公司提供，如在下载、安装app过程中产生问题，请详询证券公司。"
+                    android:textColor="@color/TextColor"
+                    android:textSize="@dimen/textview_small_size" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

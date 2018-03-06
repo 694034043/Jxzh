@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_gjtbackground"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tvTitle" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:padding="8dp" -->
+    <!-- android:text="扶贫通" -->
+    <!-- android:textSize="18sp" /> -->
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/textview_normal_size"
+        android:text="公积金联名卡客户尊享" />
+
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ColorLine" />
+     
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:textSize="@dimen/textview_normal_size"
+        android:text="信用贷款，无需抵押；"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/textview_normal_size"
+        android:text="极速秒批，消费用途；" />
+    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/textview_normal_size"
+        android:text="随借随还，按日计息；" />
+     
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ColorLine" />
+
+    <Button
+        android:id="@+id/btnGoApply"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fpt_stroke_circle"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

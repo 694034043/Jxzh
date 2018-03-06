@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/base_action_bar" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/pic_yjt_top_banner_02"/>
+    
+    <EditText 
+        android:id="@+id/et_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:hint="请输入18位身份证"
+        android:background="@drawable/line_kht_input_top_bottom_bg"/>
+    
+    <Button 
+        android:id="@+id/btn_query"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:background="@drawable/kht_dialog_btn_bg"/>
+    
+    <TextView 
+        android:id="@+id/tv_query_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" style="@style/default_linerlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView android:id="@+id/mTextView_dian" style="@style/default_dian" android:layout_width="@dimen/j17dp" android:layout_height="@dimen/j17dp" android:visibility="invisible"/>
+
+</LinearLayout>

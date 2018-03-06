@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_payhis_nopeccancy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_payhis_mypeccancy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无缴费记录"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_payhis_mypeccancy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_myhis_peccancy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:listSelector="@color/gray" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

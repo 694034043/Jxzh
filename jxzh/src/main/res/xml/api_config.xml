@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Apis>
+  <Api Package="com.gjbank.proto" Name="yht"
+      ApiUrl="/mobile?methodno=">
+    <!--焦点图列表-->
+    <Url name="MFocusList" type="21" errorType="0" cacheTime="1" className=".MFocusList">MFocusList</Url>
+    <!--上传文件(需要登录)-->
+    <Url name="MUploadFile" type="21" errorType="0" cacheTime="1" className=".MRet">MUploadFile</Url>
+    <!--上传文件(需要登录)-->
+    <Url name="MUploadFile2" type="21" errorType="0" cacheTime="1" className=".MRet">MUploadFile2</Url>
+    <!--获取系统常量-->
+    <Url name="MSysParams" type="21" errorType="0" cacheTime="1" className=".MSysParams">MSysParams</Url>
+    <!--获取单个系统常量-->
+    <Url name="MSysParamByCode" type="21" errorType="0" cacheTime="1" className=".MRet">MSysParamByCode</Url>
+    <!--删除通知(需要登录)-->
+    <Url name="MDelNotify" type="21" errorType="0" cacheTime="1" className=".MRet">MDelNotify</Url>
+    <!--通知状态修改-->
+    <Url name="MReadNotify" type="21" errorType="0" cacheTime="1" className=".MRet">MReadNotify</Url>
+    <!--通知详情-->
+    <Url name="MNotify" type="21" errorType="0" cacheTime="1" className=".MNotify">MNotify</Url>
+    <!--最新消息-->
+    <Url name="MGetLatestNotifies" type="21" errorType="0" cacheTime="1" className=".MNotifyList">MGetLatestNotifies</Url>
+    <!--是否有新通知-->
+    <Url name="MHasNews" type="21" errorType="0" cacheTime="1" className=".MRet">MHasNews</Url>
+    <!--平台通知-->
+    <Url name="MNotifyList" type="21" errorType="0" cacheTime="1" className=".MNotifyList">MNotifyList</Url>
+    <!--系统字典列表-->
+    <Url name="MSystemCodeList" type="21" errorType="0" cacheTime="1" className=".MSystemCodeList">MSystemCodeList</Url>
+    <!--支行-->
+    <Url name="MAgentList" type="21" errorType="0" cacheTime="1" className=".MAgentList">MAgentList</Url>
+    <!--所有支行-->
+    <Url name="MAgentListAll" type="21" errorType="0" cacheTime="1" className=".MAgentList">MAgentListAll</Url>
+    <!--登录-->
+    <Url name="MLogin" type="21" errorType="0" cacheTime="1" className=".MAccount">MLogin</Url>
+    <!--当前用户信息-->
+    <Url name="MGetUserInfo" type="21" errorType="0" cacheTime="1" className=".MUser">MGetUserInfo</Url>
+    <!--修改用户信息-->
+    <Url name="MUpdateUser" type="21" errorType="0" cacheTime="1" className=".MUser">MUpdateUser</Url>
+    <!--注销(需要登录)-->
+    <Url name="MLogout" type="21" errorType="0" cacheTime="1" className=".MRet">MLogout</Url>
+    <!--检查账号是否存在-->
+    <Url name="MCheckAccountExists" type="21" errorType="0" cacheTime="1" className=".MRet">MCheckAccountExists</Url>
+  </Api>
+  <Api Package="com.item.proto" Name="yht"
+      ApiUrl="/mobile?methodno=">
+    <!--根据应用（大通）id获取该通首页配置参数-->
+    <Url name="MModuleIndex" type="21" errorType="0" cacheTime="1" className=".MModuleIndex">MModuleIndex</Url>
+    <!--根据应用编码获取该通首页配置参数-->
+    <Url name="MModuleIndexByCode" type="21" errorType="0" cacheTime="1" className=".MModuleIndex">MModuleIndexByCode</Url>
+    <!--返回一级应用模块列表-->
+    <Url name="MTopModuleList" type="21" errorType="0" cacheTime="1" className=".MTopModuleList">MTopModuleList</Url>
+    <!--返回业务模块入口配置参数-->
+    <Url name="MModuleEntry" type="21" errorType="0" cacheTime="1" className=".MModuleEntry">MModuleEntry</Url>
+  </Api>
+</Apis>

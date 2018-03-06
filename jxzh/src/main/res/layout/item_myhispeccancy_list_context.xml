@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="1dp"
+    tools:ignore="overdraw" >
+
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="号牌编号：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_licensenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+    
+       <!-- 驾驶证号 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="驾驶证号：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_drivenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+    <!-- 违法时间 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="处理时间：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+    <!-- 违法地点 -->
+
+
+    <!-- 违法内容 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="违法内容：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+    <!-- 号牌编号 -->
+
+  
+
+    <!-- 罚款金额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="罚款金额：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_peccancymoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+    <!-- 滞纳金 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:text="滞纳金：" />
+
+        <TextView
+            android:id="@+id/tv_myhispeccancy_othermoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/textview_small_size"
+                android:textColor="@color/black"
+            android:layout_marginLeft="2dp" />
+    </LinearLayout>
+
+   
+    
+</LinearLayout>

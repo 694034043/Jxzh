@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_action_bar" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <com.bocop.zyt.jx.view.indicator.CirclePageIndicator
+                    android:id="@+id/vp_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp" />
+            </RelativeLayout>
+
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b2e0c7"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="专属e贷款"
+                    android:textColor="#009944"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_01_01_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_01_01_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_01_01_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_01_01_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_01_01_03" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_01_01_03"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_01_01_04" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_01_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b2e0c7"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                        android:text="购物e商城"
+                    android:textColor="#009944"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_02_01_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_02_01_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_02_01_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_02_01_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_01_03" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_02_01_03"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_04_01_04" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_02_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b2e0c7"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="金融e服务"
+                    android:textColor="#009944"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_01_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_01_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_01_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_01_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_01_03" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_01_03"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_01_04" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_02_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_02_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_02_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_02_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_02_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_02_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_03_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_03_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_03_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_03_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_03_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_03_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:visibility="gone"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_01_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_03_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_03_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_02_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_03_03_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_03_03_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="e财富"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_03_05"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="e支付"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b2e0c7"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="职工e生活"
+                    android:textColor="#009944"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_04_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_04_01_01" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_04_01_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_04_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_04_01_02" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_04_01_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_04_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_04_01_03" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_04_01_03"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_04_01_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"/>
+                            <!--android:src="@drawable/ic_gong_item_04_01_04" />-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ygt_item_04_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+     </ScrollView>
+</LinearLayout>

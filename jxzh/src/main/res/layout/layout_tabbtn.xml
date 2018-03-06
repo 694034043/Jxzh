@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="55dp">
+     <LinearLayout 
+         android:id="@+id/ll_below"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:orientation="vertical"
+              >
+	    <ImageView   
+	            android:layout_marginTop="2dp" 
+	            android:id="@+id/ivTabImage"
+	            android:layout_width="33dp"
+	            android:layout_height="33dp"
+	            android:scaleType="fitCenter"
+	            android:layout_gravity="center"/>
+	
+	    <TextView
+	            android:id="@+id/tvTabName"
+	            android:layout_width="match_parent"
+	            android:layout_height="14dp"
+	            android:gravity="center|top"
+	            android:textSize="12dp"
+	            android:layout_margin="1dp"
+	            android:textColor="@color/textGray"
+	            android:text=""/>
+    </LinearLayout>
+   <LinearLayout 
+        android:id="@+id/ll_above"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:orientation="vertical"
+              >
+	    <ImageView   
+	            android:layout_marginTop="2dp" 
+	            android:id="@+id/ivTabImage_above"
+	            android:layout_width="33dp"
+	            android:layout_height="33dp"
+	            android:scaleType="fitCenter"
+	            android:layout_gravity="center"/>
+	
+	    <TextView
+	            android:id="@+id/tvTabName_above"
+	            android:layout_width="match_parent"
+	            android:layout_height="14dp"
+	            android:gravity="center|top"
+	            android:textSize="12dp"
+	            android:layout_margin="1dp"
+	            android:textColor="@color/red"
+	            android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

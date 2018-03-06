@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zyyr_layout_activity_title" />
+
+    <com.bocop.zyt.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.bocop.zyt.jx.view.LoadingView>
+
+    <include layout="@layout/zyyr_layout_ad" />
+
+    <ListView
+        android:id="@+id/lvProList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/translucence"
+        android:dividerHeight="8dp"
+        android:paddingTop="8dp" >
+    </ListView>
+
+</LinearLayout>

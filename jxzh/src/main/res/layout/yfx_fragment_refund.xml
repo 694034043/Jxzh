@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <ListView
+        android:id="@+id/lvRefund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/background_gray"
+        android:dividerHeight="8dp"
+        android:listSelector="@drawable/common_selector_list"
+        android:scrollbars="@null" >
+    </ListView>
+
+</RelativeLayout>

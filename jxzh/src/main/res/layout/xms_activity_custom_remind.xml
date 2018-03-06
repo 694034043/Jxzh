@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_gray">
+    
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+    
+     <LinearLayout
+        android:id="@+id/llRemind" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+        
+         <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center_vertical"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp">
+	        
+            <ImageView 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/xms_img_alarm"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginLeft="4dp"
+	        	android:layout_marginRight="4dp"
+	        	android:text="温馨提示："
+	        	android:textSize="12sp"/>
+            
+             <TextView 
+                android:id="@+id/tvRemind"
+                android:layout_width="0dp"
+	        	android:layout_height="wrap_content"
+	        	android:layout_weight="1"
+	        	android:layout_marginRight="4dp"
+	        	android:text=""
+	        	android:textSize="12sp"
+	        	android:singleLine="true"
+	        	android:ellipsize="marquee"
+	        	android:marqueeRepeatLimit="marquee_forever"
+        		android:focusable="true"
+        		android:focusableInTouchMode="true"/>
+            
+            <ImageView 
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/xms_img_delete"/>
+         </LinearLayout>
+         
+         <TextView style="@style/xms_horizontal_line"/>
+        
+    </LinearLayout>
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+            android:id="@+id/rlAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/xms_shape_red_bigbutton">
+            <TextView 
+                android:text="新增提醒"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/icon_xms_add"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView style="@style/xms_horizontal_line" />
+
+    <ListView
+        android:id="@+id/lvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

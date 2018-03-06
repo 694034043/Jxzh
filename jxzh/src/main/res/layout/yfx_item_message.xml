@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMessage"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yfx_shape_refund_text_view"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:text="XXXXXXXX"
+        android:textSize="@dimen/textview_normal_size" />
+
+</LinearLayout>

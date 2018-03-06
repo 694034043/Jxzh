@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlMyLoan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/common_selector_list" >
+
+            <ImageView
+                android:id="@+id/ivIconML"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zyyr_my_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivML"
+                android:layout_toRightOf="@+id/ivIconML"
+                android:text="我的贷款"
+                android:textSize="@dimen/textview_normal_size" />
+
+            <ImageView
+                android:id="@+id/ivML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:background="@color/ColorLine" />
+
+        <RelativeLayout
+            android:id="@+id/rlUD"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/common_selector_list" >
+
+            <ImageView
+                android:id="@+id/ivIconUD"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zyyr_update" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivUD"
+                android:layout_toRightOf="@+id/ivIconUD"
+                android:text="认证资料/修改"
+                android:textSize="@dimen/textview_normal_size" />
+
+            <ImageView
+                android:id="@+id/ivUD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

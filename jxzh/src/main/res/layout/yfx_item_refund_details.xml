@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRfundDetails"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvStages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="期数"
+        android:textSize="@dimen/textview_normal_size" />
+
+    <TextView
+        android:id="@+id/tvRefundPerS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="每期应还"
+        android:textSize="@dimen/textview_normal_size" />
+
+    <TextView
+        android:id="@+id/tvhChargePerS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="每期手续费"
+        android:textSize="@dimen/textview_normal_size" />
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/icon_checkmark"
+        android:visibility="invisible" />
+
+</LinearLayout>

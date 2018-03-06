@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include layout="@layout/layout_activity_title" />
+    
+    <com.bocop.jxplatform.view.riders.NoScrollViewPager
+        android:id="@+id/vpFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- TAB页切换按钮 -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="vertical"
+        >
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <com.bocop.jxplatform.view.TabButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        
+         <com.bocop.jxplatform.view.TabButton
+            android:id="@+id/btn_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.bocop.jxplatform.view.TabButton
+            android:id="@+id/btn_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

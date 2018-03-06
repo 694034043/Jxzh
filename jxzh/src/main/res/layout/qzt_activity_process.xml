@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_new"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+<!--     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" > -->
+
+        <LinearLayout
+            android:id="@+id/ll_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:src="@drawable/visaworkflow" /> -->
+        </LinearLayout>
+<!--     </ScrollView> -->
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- com.eschool.view.SquareLayout -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_layut_school"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_layout_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="" />
+
+
+    <ImageView
+        android:id="@+id/tv_unreadnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+    <!-- android:src="@drawable/icon_unread" -->
+</LinearLayout>

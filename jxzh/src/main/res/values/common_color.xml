@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 小秘书 -->
+    <color name="colorContentText">#757575</color>
+    <color name="translucence">#00FFFFFF</color>
+    <color name="colorButton">#BDA255</color>
+    <color name="colorButtonDark">#FFB74D</color>
+    <color name="background_gray">#ECECEC</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="colorTipsText">#BDBDBD</color>
+
+    <!-- 工薪贷 -->
+    <!-- <color name="blue">#4aaff7</color> -->
+    <!-- <color name="blueLight">#75D7D8</color> -->
+    <!-- <color name="blueMid">#75D7D8</color> -->
+    <!-- <color name="blueDark">#156fbb</color> -->
+    <color name="blue">#2f9df1</color>
+    <color name="blueLight">#25bcfb</color>
+    <color name="blueMid">#1eafec</color>
+    <color name="blueDark">#218ad9</color>
+    <color name="blueStatus">#30BCCE</color>
+    <color name="green">#93DB78</color>
+    <color name="redLight">#e65100</color>
+    <color name="pink">#F16D6D</color>
+    <color name="greenDark">#53C395</color>
+    <color name="greenMid">#91D875</color>
+    <color name="grayMid">#AEAEAE</color>
+    <color name="grayLight">#C1C1C1</color>
+    <color name="redText">#EB161D</color>
+    <!-- 中银易融 -->
+    <color name="BigCircle">#26C5C7</color>
+    <color name="LeftCircle">#FFB980</color>
+    <color name="RightCircle">#B6A2DE</color>
+
+    <!-- 线条色 -->
+    <color name="ColorLine">#DCDCDC</color>
+    <!-- 边框色 -->
+    <color name="ShapeStroke">#D2D2D2</color>
+
+    <!-- 验证码 -->
+    <!-- 底色 -->
+    <color name="Background_code_default">#E1E1E1</color>
+    <color name="Background_code_clicked">#D9D8D8</color>
+    <!-- 字体 -->
+    <color name="TextColor">#757474</color>
+    <!-- 边框 -->
+    <color name="ShapeStroke_default">#D2D2D2</color>
+    <color name="ShapeStroke_clicked">#C9C9C9</color>
+
+    <!-- MyLoan -->
+    <color name="TextColor_normal">#2B2B2A</color>
+    <color name="TextColor_subsidiary">#605E5E</color>
+    <color name="TextColor_applying">#1A72EB</color>
+    <color name="TextColor_unaccepted">#F41919</color>
+    <color name="TextColor_finished">#18BE81</color>
+    <color name="TextColor_cancel">#777777</color>
+
+    <!-- 进度条背景色 -->
+    <color name="background_progress">#FDE3BF</color>
+
+</resources>

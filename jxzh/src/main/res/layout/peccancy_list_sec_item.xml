@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:ignore="overdraw" >
+
+    <LinearLayout
+        android:id="@+id/fl_car_peccancy_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="违法记分："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_peccancy_score"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="罚款金额："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_peccancy_money"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+      
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="发现机关："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_peccancy_org"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="处理状态："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_peccancy_flag"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="违法内容："
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_peccancy_act"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/llt_btandtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" 
+                android:layout_marginTop="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <Button
+                    android:id="@+id/bt_car_pec_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/blue_button_selector"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:text="申请处理"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_normal_size" />
+
+                <TextView
+                    android:id="@+id/tv_car_pec_att1"
+                    style="@dimen/textview_normal_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="对此笔处罚如有异议请到处罚机关进行复议"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

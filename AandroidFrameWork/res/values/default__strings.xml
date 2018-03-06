@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="pull_state_a">松开刷新</string>
+    <string name="pull_state_b">下拉刷新</string>
+    <string name="pull_state_c">正在刷新</string>
+    <string name="loading_load">正在加载，请稍后</string>
+    <string name="footer_loading">加载中....</string>
+    <string name="prompt_loading">加载中....</string>
+    <string name="photocut_loading">处理中请稍后</string>
+    <string name="complete">完成</string>
+    <string name="choose_photo">选择照片</string>
+    <string name="getphoto_queren">确认</string>
+    <string name="getphoto_xuanzhuan">旋转</string>
+    <string name="getphoto_quxiao">取消</string>
+    <string name="contentDescription">说明</string>
+    <string name="send">发送</string>
+    <string name="save">保存</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_unsuccess">保存失败</string>
+    <string name="update_download">正在下载</string>
+    <string name="update_downloaded">下载完成,点击安装</string>
+    <string name="update_downloading">应用程序正在更新.</string>
+    <string name="update_waitfinish">应用程序正在更新,请等待更新完成</string>
+    <string name="update_willdownload">应用程序即将更新,是否继续</string>
+    <string name="cancle">取消</string>
+    <string name="submit">确定</string>
+    <string name="update_startdownload">开始更新</string>
+    <string name="update_newest">已经是最新版本</string>
+    <string name="click_exit">再按一次退出程序</string>
+
+    <string-array name="errorname">
+        <item>error1:接口处理方法未定义</item>
+        <item>error2:接口处理错误</item>
+        <item>error3:密码格式不正确</item>
+        <item>error4:密码格式不正确</item>
+    </string-array>
+
+</resources>

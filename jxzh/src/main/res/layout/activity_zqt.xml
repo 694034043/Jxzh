@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <include layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_all_new"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/small_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="金融咨询" />
+                </LinearLayout>
+
+                <com.bocop.jxplatform.view.MyListView
+                    android:id="@+id/lvadvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:cacheColorHint="@null"
+                    android:divider="@drawable/list_item_divider"
+                    android:dividerHeight="0.5dp"
+                    android:listSelector="@drawable/listview_selector"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:paddingLeft="9dp"
+                        android:src="@drawable/icon_zqt_tips" 
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="免责申明"
+                        android:textColor="@color/redText"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp"
+                    android:text="\t\t‘证券通’是我行为了方便您进行证券投资而为您与券商之间搭建的开户渠道，不代表我行主动引导您进行证券交易，并对您的交易盈亏负责。请您充分了解股市投资风险，谨慎入市。本服务项下所有链接和二维码均由证券公司提供，如在下载、安装app过程中产生问题，请详询证券公司。"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_small_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

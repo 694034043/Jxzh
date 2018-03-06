@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yfx_shape_title_radio_group"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioUseLoan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_selector_title_left_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="用款" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/pink" />
+
+            <RadioButton
+                android:id="@+id/radioReFund"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_selector_title_mid_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="还款" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/pink" />
+
+            <RadioButton
+                android:id="@+id/radioRecords"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_selector_title_right_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="还款历史" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray" >
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_pay_title"
+        layout="@layout/layout_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_pay_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/common_pay_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:gravity="end"
+            android:paddingBottom="@dimen/margin_or_padding_18"
+            android:paddingLeft="@dimen/margin_or_padding_8"
+            android:paddingRight="@dimen/margin_or_padding_8"
+            android:paddingTop="@dimen/margin_or_padding_8"
+            android:visibility="gone"
+            tools:text="111111111111" />
+
+        <RelativeLayout
+            android:id="@+id/common_pay_layout_union"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_or_padding_8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_china_bank_58"
+                android:drawablePadding="@dimen/margin_or_padding_8"
+                android:gravity="center"
+                android:text="银行卡支付"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_or_padding_16"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/common_pay_layout_union_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_common_pay_btn"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayMid" />
+
+        <RelativeLayout
+            android:id="@+id/common_pay_layout_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_or_padding_8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/wxpay"
+                android:drawablePadding="@dimen/margin_or_padding_8"
+                android:gravity="center"
+                android:text="微信支付"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_or_padding_16" />
+
+            <RadioButton
+                android:id="@+id/common_pay_layout_wechat_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_common_pay_btn"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayMid" />
+
+        <RelativeLayout
+            android:id="@+id/common_pay_layout_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_or_padding_8"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/alipay"
+                android:drawablePadding="@dimen/margin_or_padding_8"
+                android:gravity="center"
+                android:text="支付宝支付"
+                android:textColor="#d4d4d4"
+                android:textSize="@dimen/margin_or_padding_16" />
+
+            <RadioButton
+                android:id="@+id/common_pay_layout_alipay_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_common_pay_btn"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/common_pay_layout_zypay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_or_padding_8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_china_bank_58"
+                android:drawablePadding="@dimen/margin_or_padding_8"
+                android:gravity="center"
+                android:text="中银易商"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_or_padding_16" />
+
+            <RadioButton
+                android:id="@+id/common_pay_layout_zypay_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_common_pay_btn"
+                android:button="@null"
+                android:visibility="gone"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayMid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款金额:"/>
+
+            <EditText
+                android:id="@+id/et_pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:inputType="number"
+                android:text="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="元" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/common_pay_layout_btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_title_button"
+        android:text="立即支付"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

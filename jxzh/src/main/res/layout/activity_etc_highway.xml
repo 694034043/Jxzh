@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_titlehtml" />
+
+    <ImageView 
+        android:id="@+id/imageview_banner"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:src="@drawable/etc_highway_banner"/>
+    
+    <TextView
+        android:id="@+id/textview_etc_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="ETC介绍"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/arrow_right"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#A9A9A9"
+        />
+    
+    <TextView
+        android:id="@+id/textview_etc_favourable"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="ETC优惠活动"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/arrow_right"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#A9A9A9"
+        />
+    
+    
+    <TextView
+        android:id="@+id/textview_etc_network"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="附近ETC网点"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/arrow_right"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#A9A9A9"
+        android:visibility="gone"
+        />
+    
+     <TextView
+        android:id="@+id/textview_etc_network_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="江西各市ETC网点预约申请"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/arrow_right"
+        android:visibility="gone"
+        />
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#A9A9A9"
+        />
+    
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="温馨提示：所有中行网点均可受理预约申请"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        />
+    
+    
+    
+    
+</LinearLayout>

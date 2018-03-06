@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+		       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout 
+                android:id="@+id/rlt"
+		    	android:layout_width="match_parent"
+                android:layout_height="@dimen/width_or_height_144"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                
+            <TextView 
+                 android:id="@+id/tvImage"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="正在拼命加载。。。"
+                 android:visibility="gone"/>
+            
+		    <ImageView
+                    android:id="@+id/ivCounrty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+		    
+		    </RelativeLayout> 
+            
+<!--             
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivCounrty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ddfsadf"
+                    android:layout_marginTop="@dimen/margin_or_padding_6"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_big_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_or_padding_6"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/qzt_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_or_padding_10"
+                    android:paddingRight="@dimen/margin_or_padding_6"
+                    android:text="sdfgsdf" 
+                    android:textSize="@dimen/textview_small_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_or_padding_6"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/qzt_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_or_padding_10"
+                    android:paddingRight="@dimen/margin_or_padding_6"
+                    android:text="sdfgsdf" 
+                    android:textSize="@dimen/textview_small_size"/>
+            </LinearLayout>
+            
+              <LinearLayout
+                android:id="@+id/llt_btcaradd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_or_padding_8"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_qztapply"
+                    android:layout_width="@dimen/width_or_height_180"
+                    android:layout_height="@dimen/margin_or_padding_40"
+                    android:layout_margin="@dimen/margin_or_padding_10"
+                    android:background="@drawable/blue_button_selector"
+                    android:gravity="center"
+                    android:text="签证申请"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_normal_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

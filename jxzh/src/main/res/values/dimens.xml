@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- BUTTON 的字体大小 -->
+    <dimen name="button_normal_size">16dp</dimen>
+
+    <!-- TEXTVIEW 的字体大小 -->
+    <dimen name="textview_normal_size">16dp</dimen>
+
+    <dimen name="textview_little_bigger_size">18sp</dimen>
+
+    <dimen name="textview_mid_size">20dp</dimen>
+
+    <dimen name="textview_big_size">26dp</dimen>
+
+    <dimen name="textview_small_size">14dp</dimen>
+    <dimen name="textview_10_size">10dp</dimen>
+
+    <dimen name="textview_verysmall_size">12dp</dimen>
+    <dimen name="overlap_pager_margin">-280dp</dimen>
+    <dimen name="selectcity_group_item_padding">14dp</dimen>
+    <dimen name="bladeview_popup_height">80dp</dimen>
+    <dimen name="bladeview_fontsize">12sp</dimen>
+    <dimen name="bladeview_popup_fontsize">20sp</dimen>
+
+    <dimen name="margin_or_padding_1">1dp</dimen>
+    <dimen name="margin_or_padding_2">2dp</dimen>
+    <dimen name="margin_or_padding_3">3dp</dimen>
+    <dimen name="margin_or_padding_4">4dp</dimen>
+    <dimen name="margin_or_padding_5">5dp</dimen>
+    <dimen name="margin_or_padding_6">6dp</dimen>
+    <dimen name="margin_or_padding_7">7dp</dimen>
+    <dimen name="margin_or_padding_8">8dp</dimen>
+    <dimen name="margin_or_padding_10">10dp</dimen>
+    <dimen name="margin_or_padding_12">12dp</dimen>
+    <dimen name="margin_or_padding_14">14dp</dimen>
+    <dimen name="margin_or_padding_16">16dp</dimen>
+    <dimen name="margin_or_padding_18">18dp</dimen>
+    <dimen name="margin_or_padding_20">20dp</dimen>
+    <dimen name="margin_or_padding_24">24dp</dimen>
+    <dimen name="margin_or_padding_28">28dp</dimen>
+    <dimen name="margin_or_padding_30">30dp</dimen>
+    <dimen name="margin_or_padding_32">32dp</dimen>
+    <dimen name="margin_or_padding_36">36dp</dimen>
+    <dimen name="margin_or_padding_40">40dp</dimen>
+    <dimen name="margin_or_padding_42">42dp</dimen>
+    <dimen name="margin_or_padding_44">44dp</dimen>
+    <dimen name="margin_or_padding_48">48dp</dimen>
+    <dimen name="margin_or_padding_60">60dp</dimen>
+
+    <dimen name="width_or_height_114">114dp</dimen>
+    <dimen name="width_or_height_144">144dp</dimen>
+    <dimen name="width_or_height_180">180dp</dimen>
+
+</resources>

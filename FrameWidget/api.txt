@@ -1,0 +1,12 @@
+SlidingFragment 使用详解：
+1、添加fragment 有多种添加方式，详情见注释
+2、设置左边的fragment：setLeftFragMent
+3、设置右边的fragment:setRightFragMent
+4、设置左边的fragment宽度:setLeftWidth
+5、设置右边的fragment宽度:setRightWidth
+6、设置左边的fragment开关:setLeftToggle()
+7、设置右边的fragment开关:setRightToggle()
+8、返回上一页：goBack()
+9、跳转到指定页：goWhere；
+10、监听选中事件 先继承OnCheckChange接口，详情参考demo
+11、实现在子fragment中选中当前页调接口，详情参考demo

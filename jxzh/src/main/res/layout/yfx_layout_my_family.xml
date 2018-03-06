@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/tvFam"
+        android:layout_width="32dp"
+        android:layout_height="100dp"
+        android:background="@color/pink"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/myFamily"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textview_normal_size" />
+
+    <TextView
+        android:id="@+id/tvNam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvFam"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:text="姓　　名："
+        android:textSize="@dimen/textview_normal_size" />
+
+    <EditText
+        android:id="@+id/etFamilyName"
+        style="@style/edit_text_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tvNam"
+        android:ems="10"
+        android:maxLength="5"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textview_normal_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNam"
+        android:layout_toRightOf="@+id/tvFam"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingTop="20dp"
+        android:text="手机号码："
+        android:textSize="@dimen/textview_normal_size" />
+
+    <EditText
+        android:id="@+id/etFamilyPhoneNum"
+        style="@style/edit_text_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etFamilyName"
+        android:layout_alignRight="@+id/etFamilyName"
+        android:layout_below="@+id/etFamilyName"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textSize="@dimen/textview_normal_size" />
+
+</RelativeLayout>

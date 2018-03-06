@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/xms_layout_activity_title_image" />
+ 	<View
+        android:id="@+id/vLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:background="@color/background_gray"
+            android:orientation="vertical" >
+
+            <com.boc.jx.view.swipemenulistview.SwipeMenuListView
+                android:id="@+id/lv_Message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:divider="@color/translucence"
+                android:dividerHeight="2dp"
+                android:scrollbars="@null" >
+            </com.boc.jx.view.swipemenulistview.SwipeMenuListView>
+
+           <TextView
+                android:id="@+id/tvMessageError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:text="正在加载......"
+                android:textSize="@dimen/textview_mid_size" />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/homered" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <com.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvSign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="2"
+                android:verticalSpacing="1dp" >
+            </com.bocop.jxplatform.view.MyGridView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="银行服务"
+                    android:textColor="@color/homered"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/homered" />
+
+            <com.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvBankSer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" >
+            </com.bocop.jxplatform.view.MyGridView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="24dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="第三方服务"
+                    android:textColor="@color/homered"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/homered" />
+
+            <com.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gvOtherSer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/background_gray"
+                android:numColumns="4"
+                android:verticalSpacing="1dp" >
+            </com.bocop.jxplatform.view.MyGridView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_gray" />
+            
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone_tip"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="9dp"
+                        android:text="温馨提示"
+                        android:textColor="@color/phone_tip"
+                        android:textSize="@dimen/textview_normal_size" />
+                     
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:text="本服务由第三方服务商提供，相关服务和责任将由第三方承担，如有问题请咨询该公司客服。"
+                        android:textColor="@color/phone_tip"
+                        android:textSize="@dimen/textview_small_size" />
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

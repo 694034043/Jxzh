@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yztyt_base_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_yzt_ying_tan_main_bg2"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <com.bocop.zyt.jx.view.indicator.CirclePageIndicator
+                    android:id="@+id/vp_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_yztyt_dedicated_item_bg">
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yzt_ytzq_item_01"
+                    android:textColor="@color/white"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    android:src="@drawable/yztyt_menu_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gv_item_01"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:background="@drawable/yztyt_gridview_bg"
+                android:stretchMode="columnWidth" >
+            </com.bocop.zyt.bocop.jxplatform.view.MyGridView>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_yztyt_dedicated_item_bg">
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yzt_ytzq_item_02"
+                    android:textColor="@color/white"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    android:src="@drawable/yztyt_menu_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gv_item_02"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:background="@drawable/yztyt_gridview_bg"
+                android:stretchMode="columnWidth" >
+            </com.bocop.zyt.bocop.jxplatform.view.MyGridView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_yztyt_dedicated_item_bg">
+
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yzt_ytzq_item_03"
+                    android:textColor="@color/white"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="16dp"
+                    android:visibility="gone"
+                    android:src="@drawable/yztyt_menu_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <com.bocop.zyt.bocop.jxplatform.view.MyGridView
+                android:id="@+id/gv_item_03"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:background="@drawable/yztyt_gridview_bg"
+                android:stretchMode="columnWidth" >
+            </com.bocop.zyt.bocop.jxplatform.view.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

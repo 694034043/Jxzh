@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_new"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_pectitle_licensenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_pectitle_licensenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_linearlayout_gray"
+                    android:gravity="center"
+                    android:text="赣A88888"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textview_mid_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ll_nocar_peccancy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_nocar_peccancy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您目前没有任何违章记录，请继续保持！"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_carpeccancy_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:textSize="@dimen/textview_verysmall_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="可办理处罚金额在200元（含）以下、违法记分在6分（含）以内且违法总记分不超过12分的违章" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            
+            <ListView
+                android:id="@+id/activity_mylist_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:divider="@null"
+                android:fitsSystemWindows="true" />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="60dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/page_pwt0_rail" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    火车站贵宾厅："
+            android:textColor="#A00F30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    1、赣州火车站中国银行冠名贵宾厅贵宾通道免积分通行，适用卡种（只限本人适用）：中银财富卡、长城美国运通卡、白金卡、理财金卡、长城公务金卡、BOC信用金卡、环球通信用金卡、长城信用卡金卡、赣州住房公积金金卡。\n    2、九江火车站中国银行冠名贵宾厅贵宾通道免积分通行，适用卡种：财富卡、长城美国运通卡、长城环球通无限信用卡（以上可携伴2名同车次陪同人员）、白金信用卡、理财金卡、商贸通卡（以上可携伴1名同车次陪同人员）、长城信用金卡（只限本人使用）。"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    铁路员工专属定制理财产品"
+            android:textColor="#A00F30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    可根据铁路员工需要集体定制，期限灵活、收益更高的专属理财产品，满足铁路员工投资理财、资产保值增值需求。"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="机场贵宾厅"
+            android:textColor="#A00F30"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    客户通过尊享积分兑换享受全国32家中银冠名机场贵宾厅。 （详见附件）"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    江西境内："
+            android:textColor="#A00F30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="   1、南昌昌北机场中行冠名贵宾厅：\n   每次通行扣除尊享积分10分或交易积分5万分享受一次2小时专属休息贵宾厅，还提供航班情况随时知晓、航班座位提前挑选、托运行李提前送出、温馨优雅服务环境尊享、独立安全通道专属摆渡车及登机通道等服务。预约电话：400-101-6789"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page_pwt02" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    2、江西航空南昌昌北机场贵宾厅：\n    使用1分尊享积分或2500交易积分即可通行并携伴一人，通过客户经理至少提前四小时预约。其中针对财富卡、长城美国运通卡客户采用先扣积分，季末冲回方式（仅限尊享积分）。江西航空贵宾室预约服务均需通过理财经理进行，非理财经理预约客户，不予接待。"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/page_pwt03" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="    3、井冈山中国银行冠名贵宾厅贵宾通道免积分通行适用卡种（可携伴1名同班次人员）：财富卡、长城美国运通卡、无限卡、白金卡、钛金女士卡、理财金卡、员工卡、商贸通卡、军人保障卡、长城主题卡的持卡客户。"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/page_pwt04" />
+    </LinearLayout>
+
+</ScrollView>

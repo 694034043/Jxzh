@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="44dip"
+    android:background="@color/A" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/mLinearLayout_back"
+            android:layout_width="@dimen/j60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/j15dp" >
+
+            <ImageButton
+                android:id="@+id/btn_left"
+                style="@style/text_style_15_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:drawablePadding="@dimen/j3dp"
+                android:gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/j50dp"
+            android:layout_marginRight="@dimen/j50dp"
+            android:drawablePadding="@dimen/j2dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_right_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/j11dp"
+            android:layout_toLeftOf="@+id/btn_right"
+            android:background="#00000000"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_right"
+            style="@style/text_style_15_white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:drawablePadding="@dimen/j3dp"
+            android:gravity="center"
+            android:paddingRight="@dimen/j11dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mTextView_right"
+            style="@style/text_style_13_white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="111"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingRight="@dimen/j11dp" />
+        <TextView
+            android:id="@+id/mTextView_right_two"
+            style="@style/text_style_13_white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="111"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/mTextView_right"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/j10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

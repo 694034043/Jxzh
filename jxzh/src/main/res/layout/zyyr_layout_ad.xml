@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAd"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/ivSingleImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_rollimage"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rltAd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpAd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.bocop.zyt.jx.view.indicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/yfx_shape_circle_stroke_grey"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingTop="32dp" >
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="AAAAAAA"
+            android:textColor="@color/redLight"
+            android:textSize="@dimen/textview_mid_size" />
+
+        <TextView
+            android:id="@+id/tvStatusIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:text="抱歉，因系统忙碌，您的还款尚未处理，请您在5分钟后再次重试。如仍为成功，请您及时联系中行客服热线95566。"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/textview_little_bigger_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/BigButton_Margin"
+        android:text="返回" />
+
+</LinearLayout>

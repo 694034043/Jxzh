@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gesturemanager">手势解锁</string>
+    <string name="setpassword">请绘制手势密码</string>
+    <string name="password_modify">修改手势密码</string>
+    <string name="setDefaultPassword">请绘制原手势密码</string>
+    <string name="inputDefaultPassword">请输入手势密码</string>
+    <string name="inputNewPassword">请设置手势密码</string>
+    <string name="resetInputNewPassword">请再次设置手势密码</string>
+    <string name="setPasswordSuccess">设置成功</string>
+    <string name="passwordistooshortinputagain">密码少于4位，请重新绘制</string>
+    <string name="handpasswordless">手势密码最少为4位</string>
+    <string name="originalPasswordInputError">原始密码输入错误，请重新输入</string>
+    <string name="newPasswordInputError">与上次设置不一致，请重新设置</string>
+    <string name="fogetgesturepassword">忘记手势密码？</string>
+    
+    
+    <string name="lockscreen_access_pattern_start">"开始绘制手势密码"</string>
+    <string name="lockscreen_access_pattern_cleared">"密码已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"密码绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"请绘制手势密码"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"密码已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制手势密码"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新手势密码"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个手势密码，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+
+</resources>

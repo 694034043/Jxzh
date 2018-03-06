@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" >
+
+            <TextView
+                android:id="@+id/tvRefAccredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/AccreditTitle1"
+                android:textSize="@dimen/textview_mid_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/AccreditContent1"
+                android:textSize="@dimen/textview_normal_size"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AccreditContent2"
+                android:textSize="@dimen/textview_normal_size" />
+            <TextView
+                android:id="@+id/tvContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textview_normal_size" />
+            <TextView
+                android:id="@+id/tvContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textview_normal_size" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AccreditContent3"
+                android:textSize="@dimen/textview_normal_size" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AccreditContent4"
+                android:textStyle="bold"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAgreeAccredit"
+        style="@style/BigButton_Margin"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/readAndAgree" >
+    </Button>
+
+</LinearLayout>

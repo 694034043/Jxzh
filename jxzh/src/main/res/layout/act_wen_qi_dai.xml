@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_top_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <com.bocop.zyt.jx.view.indicator.CirclePageIndicator
+                    android:id="@+id/vp_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:layout_marginBottom="4dp" />
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:id="@+id/ll_f1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ywt_wen_hua_e_dai_bg"
+                android:visibility="gone"
+                android:orientation="vertical">
+                
+                <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/E1E1E3"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="赣鄱传承"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_f2_01_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_f2_01_01_01" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_01"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_f2_01_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_f2_01_01_02" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_02"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_f2_01_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_f2_01_01_03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_03"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/ll_f2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ywt_wen_hua_e_quan_bg"
+                android:visibility="gone"
+                android:orientation="vertical">
+                
+                <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/E1E1E3"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="赣鄱传承"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_01_01" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="传统技艺"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_01_02" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="传统美术"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_01_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_01_03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="传统戏剧"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+                
+                <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/E1E1E3"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="青史留芳"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_02_01_02" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="名人佳话"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_02_01_01" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="当代江西"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_02_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_02_01_03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="建筑考古"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+            
+            <LinearLayout android:id="@+id/ll_f3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ywt_wen_hua_e_gou_bg"
+                android:visibility="gone"
+                android:orientation="vertical">
+                
+                <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/E1E1E3"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:text="文旅商海"
+                    android:textColor="@color/red"
+                    android:textSize="17sp"
+                    android:textStyle="bold" /> -->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_01"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_01" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="文瓷购"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_02"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_02" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="文化购"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_04" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+                        android:id="@+id/ll_item_03_01_03"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="文旅购"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout> -->
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:visibility="gone"
+                    android:paddingTop="8dp" >
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_04"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_04" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_05"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="visible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_03_01_04" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/ll_item_03_01_06"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wen_item_01_01_03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="@string/ywt_item_01_f2_01_01_04"
+                            android:textColor="@color/yin_ci_text_black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

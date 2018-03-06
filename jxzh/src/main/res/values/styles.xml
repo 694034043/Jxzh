@@ -1,0 +1,455 @@
+<resources>
+
+    <style name="menu">
+        <item name="android:background">@drawable/bg_tab_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/select_text</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="dialog_tr_lt" parent="@android:style/Theme.Dialog">
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@color/color_cai_shen</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 隐藏标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 线条 -->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <style name="bigline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/bg_all_new</item>
+    </style>
+    <style name="xms_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <style name="xms_radioButton_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="xms_service_line_style">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">#da3f3b</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="item_icon_style_noarrow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 违章信息中车牌显示 -->
+    <style name="big_carln_text">
+        <item name="android:textColor">@color/jlb_blue</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <!-- 车牌列表中显示 -->
+    <style name="mid_carln_bt">
+
+        <!-- <item name="android:background">@color/jlb_blue</item> -->
+        <item name="android:textColor">@color/jlb_blue</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="normal_white_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 正常大小字体 -->
+    <style name="normal_edit">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="normal_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 小号字体 -->
+    <style name="small_text">
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 按钮 -->
+    <style name="blue_mid_bt">
+        <item name="android:textColor">@color/jlb_blue</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="grzx_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- 商品详情风格 -->
+    <style name="product_name">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 优惠信息 -->
+    <style name="product_preferential">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+    <!-- 优惠信息 -->
+    <style name="product_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+    <!-- 商品详情 选择按钮 -->
+    <style name="product_info">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 商品列表——首页——name -->
+    <style name="product_list_name">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 商品列表——首页——其他 -->
+    <style name="product_list_other">
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 个人中心 -->
+    <style name="grzx_item_image_left">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <style name="grzx_item_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="divideLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="registerText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <!-- 小达人对话框 -->
+    <style name="xdrDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否悬浮在Activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="kcode_explain_text">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/text_lightGray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="kcode_link_text">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 顶行标题的格式 -->
+    <style name="ui_titlebar_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">#490000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <!-- 页面中字体的格式，灰色 -->
+    <style name="TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 字体的格式，黑色 -->
+    <style name="TextAppearance_list" parent="@style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 字体的格式，偏大 -->
+    <style name="TextAppearance_bigger" parent="@style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 字体的格式，偏大 -->
+    <style name="TextAppearance_big" parent="@style/TextAppearance">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- 字体的格式，偏小 -->
+    <style name="TextAppearance_small" parent="@style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 字体的格式，更大 -->
+    <style name="TextAppearance_large" parent="@style/TextAppearance">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!-- 字体具有阴影 base -->
+    <style name="TextShadowBase">
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style>
+
+    <!-- 字体具有阴影 大字体 -->
+    <style name="TextShadow_large" parent="@style/TextShadowBase">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- 字体具有阴影 小字体 -->
+    <style name="TextShadow_small" parent="@style/TextShadowBase">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 按钮Button 480*800 -->
+    <style name="buttonAppearance">
+        <item name="android:layout_width">320dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 文本框EditText 480*800 -->
+    <style name="editTextAppearance">
+        <item name="android:layout_width">320dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <!-- 文本TextView -->
+    <style name="textViewAppearance" parent="@style/TextAppearance">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+
+
+    <style name="HorizScrollViewItem">
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:text">Sample Item</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+    <style name="MyTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="MyWidget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">22dip</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textAppearance">@style/MyTextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyTextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_custom" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- bocop_dialog样式 -->
+    <style name="Dialog_bocop">
+        <item name="android:windowBackground">@color/bocop_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="text_low_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="DialogStyle_4" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="vertical_layout">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/domo_toolbar_bg</item>
+    </style>
+    <style name="horizontal_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/filemanagermenubg_w</item>
+    </style>
+
+    <!--added by gengjunying 2016-04-01 -->
+    <style name="ButtonRed" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/skin_color_button</item>
+        <item name="android:background">@drawable/btn_cancle</item>
+    </style>
+
+    <style name="CommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 标题图片样式 -->
+    <style name="title_image_style">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">7dp</item>
+    </style>
+    <style name="ButtonGreen" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/skin_color_button</item>
+        <item name="android:background">@drawable/icon_button</item>
+    </style>
+</resources>

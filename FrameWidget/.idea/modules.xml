@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AandroidFrameWork/AandroidFrameWork.iml" filepath="$PROJECT_DIR$/../AandroidFrameWork/AandroidFrameWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrameWidget.iml" filepath="$PROJECT_DIR$/FrameWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../XiaoDianTong.iml" filepath="$PROJECT_DIR$/../XiaoDianTong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../map/map.iml" filepath="$PROJECT_DIR$/../map/map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/../social_sdk_library_project/social_sdk_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xdt/xdt.iml" filepath="$PROJECT_DIR$/../xdt/xdt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xdtht/xdtht.iml" filepath="$PROJECT_DIR$/../xdtht/xdtht.iml" />
+    </modules>
+  </component>
+</project>

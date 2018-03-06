@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+
+    <LinearLayout
+        android:id="@+id/llFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group"
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioProDetail"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/yfx_selector_bottom_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:text="产品详情" />
+
+        <RadioButton
+            android:id="@+id/radioRecords"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/yfx_selector_bottom_radio_button"
+            android:button="@null"
+            android:gravity="center"
+            android:text="分期记录" />
+    </RadioGroup>
+
+</RelativeLayout>

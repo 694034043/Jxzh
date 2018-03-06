@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AandroidFrameWork/AandroidFrameWork.iml" filepath="$PROJECT_DIR$/AandroidFrameWork/AandroidFrameWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrameWidget/FrameWidget.iml" filepath="$PROJECT_DIR$/FrameWidget/FrameWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Jxzh.iml" filepath="$PROJECT_DIR$/Jxzh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jxzh/jxzh.iml" filepath="$PROJECT_DIR$/jxzh/jxzh.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+
+    <com.bocop.zyt.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.bocop.zyt.jx.view.LoadingView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnApply"
+        android:layout_below="@+id/title"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp" >
+
+                    <com.bocop.zyt.bocop.zyyr.view.CircleView
+                        android:id="@+id/cvLeft"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundColorValue="@color/LeftCircle"
+                        app:filllColor="@color/translucence"
+                        app:strokeColorValue="@color/translucence"
+                        app:strokeWidthSize="@null" >
+                    </com.bocop.zyt.bocop.zyyr.view.CircleView>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvLeftTextTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="最快23天"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_small_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="放款"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_small_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@+id/reCenter" >
+
+                    <com.bocop.zyt.bocop.zyyr.view.CircleView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundColorValue="@color/blueLight"
+                        app:filllColor="@color/translucence"
+                        app:strokeColorValue="@color/translucence"
+                        app:strokeWidthSize="@null" >
+                    </com.bocop.zyt.bocop.zyyr.view.CircleView>
+
+                    <TextView
+                        android:id="@+id/tvLeftTextSubTitle"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="2期"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textview_small_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <com.bocop.zyt.bocop.zyyr.view.CircleView
+                        android:id="@+id/cvCenter"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundColorValue="@color/BigCircle"
+                        app:filllColor="@color/translucence"
+                        app:strokeColorValue="@color/translucence"
+                        app:strokeWidthSize="@null" >
+                    </com.bocop.zyt.bocop.zyyr.view.CircleView>
+
+                    <LinearLayout
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvCenterTextTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="10000.00元"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_small_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="每期利息"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_small_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_toRightOf="@+id/reCenter" >
+
+                    <com.bocop.zyt.bocop.zyyr.view.CircleView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundColorValue="@color/pink"
+                        app:filllColor="@color/translucence"
+                        app:strokeColorValue="@color/translucence"
+                        app:strokeWidthSize="@null" >
+                    </com.bocop.zyt.bocop.zyyr.view.CircleView>
+
+                    <LinearLayout
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvRightTextSubTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="500万"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_verysmall_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="贷款"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_verysmall_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp" >
+
+                    <com.bocop.zyt.bocop.zyyr.view.CircleView
+                        android:id="@+id/cvRight"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        app:backgroundColorValue="@color/RightCircle"
+                        app:filllColor="@color/translucence"
+                        app:strokeColorValue="@color/translucence"
+                        app:strokeWidthSize="@null" >
+                    </com.bocop.zyt.bocop.zyyr.view.CircleView>
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvRightTextTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="3000元"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_verysmall_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="月平均还款"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textview_verysmall_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品名称:"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tvProName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="XXXXXXXXXXX"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/ColorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月利率:　"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tvRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="6%"
+                        android:textColor="@color/redText"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="万元"
+                        android:textSize="@dimen/textview_normal_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvProceedLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/ColorLine"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llProceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收益率:　"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tvProceed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="6%"
+                        android:textColor="@color/redText"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="万元"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/ColorLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="详细介绍:"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tvProIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:lineSpacingExtra="2dp"
+                        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/ColorLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnApply"
+        style="@style/BigButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="申请"
+        android:visibility="gone" />
+
+</RelativeLayout>

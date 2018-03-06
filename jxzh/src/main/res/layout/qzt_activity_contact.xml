@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+     <LinearLayout
+         android:id="@+id/ll_qzt_nocontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+         android:visibility="gone"
+        android:orientation="vertical" >
+
+       <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="您还未添加常用联系人信息"
+                android:textSize="@dimen/textview_normal_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    
+		    <ListView
+		        android:id="@+id/lv_qztcontact"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:cacheColorHint="@null"
+		        android:divider="@drawable/list_item_divider"
+		        android:dividerHeight="0.5dp"
+		        android:listSelector="@drawable/listview_selector"
+		        android:scrollbars="none" />
+	</LinearLayout>
+	
+
+    <LinearLayout
+        android:id="@+id/llt_contactadd"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/background_gray"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_contactorder"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:text="+ 新建地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_normal_size" />
+    </LinearLayout>
+
+</LinearLayout>

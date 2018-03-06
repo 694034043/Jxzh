@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gesture_login_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvNoSetPassword"
+        style="@style/tv_white16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/inputDefaultPassword"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/passLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvForgetPassword"
+        android:layout_below="@+id/tvNoSetPassword"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <com.bocop.jxplatform.gesture.view.LocusPassWordView
+            android:id="@+id/mLocusPassWordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        style="@style/tv_white20"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/fogetgesturepassword"
+        android:textSize="14sp" />
+
+</RelativeLayout>

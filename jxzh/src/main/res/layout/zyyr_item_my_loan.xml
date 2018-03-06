@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_selector_list"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ivProIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/zyyr_logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/ivRight"
+        android:layout_toRightOf="@+id/ivProIcon" >
+
+        <TextView
+            android:id="@+id/tvProType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXX"
+            android:textColor="@color/TextColor_normal"
+            android:textSize="@dimen/textview_little_bigger_size" />
+
+        <TextView
+            android:id="@+id/tvProIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProType"
+            android:layout_marginTop="8dp"
+            android:text="XXXXXXXX"
+            android:textColor="@color/TextColor_subsidiary"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="XXXX"
+            android:textSize="@dimen/textview_normal_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_new"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title_right" />
+
+    <LinearLayout
+        android:id="@+id/llt_carinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="姓名："
+                android:textSize="@dimen/textview_normal_size" />
+
+            <EditText
+                android:id="@+id/ed_qzt_name"
+                style="@style/normal_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:background="@drawable/bg_edittext"
+                android:hint=""
+                android:padding="6dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="电话："
+                android:textSize="@dimen/textview_normal_size" />
+
+            <EditText
+                android:id="@+id/ed_qzt_phone"
+                style="@style/normal_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:background="@drawable/bg_edittext"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="6dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="身份证："
+                android:textSize="@dimen/textview_normal_size" />
+
+            <EditText
+                android:id="@+id/ed_qzt_cardId"
+                style="@style/normal_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:background="@drawable/bg_edittext"
+                android:hint=""
+                android:padding="6dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="邮箱："
+                android:textSize="@dimen/textview_normal_size" />
+
+            <EditText
+                android:id="@+id/ed_qzt_mail"
+                style="@style/normal_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:background="@drawable/bg_edittext"
+                android:hint=""
+                android:padding="6dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="地址："
+                android:textSize="@dimen/textview_normal_size" />
+
+            <EditText
+                android:id="@+id/ed_qzt_address"
+                style="@style/normal_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="6"
+                android:background="@drawable/bg_edittext"
+                android:hint=""
+                android:padding="6dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/vehiclenum"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/textview_normal_size" />
+
+            <TextView
+                android:id="@+id/tvvehiclenum_query"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+
+        <TextView style="@style/line" />
+
+        <Button
+            android:id="@+id/bt_add_contactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_normal_size" />
+    </LinearLayout>
+
+</LinearLayout>

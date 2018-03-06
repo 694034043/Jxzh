@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="16dp" >
+
+    <com.boc.jx.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.boc.jx.view.LoadingView>
+
+    <LinearLayout
+        android:id="@+id/llCompleteInfo"
+        style="@style/text_view_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/xms_selector_text"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="实名认证  补充资料"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/down" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/reLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/llCompleteInfo" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnApply"
+            android:overScrollMode="never"
+            android:padding="16dp"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/llProDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yfx_shape_circle_stroke_grey"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yfx_gxd_rz_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="产品简介"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    “中银E贷·关爱专属网络消费贷款”是中国银行江西省分行推出的地区特邀客户专属信贷服务。基于中国银行与您所在单位的合作，提供移动端的贷款自助申请及审批，对符合贷款条件、具备真实意愿的客户，给予最高30万元的信用额度，满足您合法合理的消费支出。"
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yfx_shape_circle_stroke_grey"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yfx_gxd_rz_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proAdvantage"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon_01"
+                    android:text="  合作专属，尊享额度"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    目前仅针对中国银行江西省分行各主要合作企事业单位员工，以您在单位的薪酬职级及其他资信状况为依据，“关爱”专属。"
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon_01"
+                    android:text="  无抵质押，信用额度"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    无需抵押、无需质押、无需担保，只要提供您的相关个人信息，准确、真实、齐全，即可完成贷款申请，“关爱”传递。"
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon_01"
+                    android:text="  手续轻便，快速用款"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    轻生活、轻流程，移动端快速操作，最快实时完成审批，当天实现快速用款，资金、信息安全有保障，“关爱”通达。"
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon_01"
+                    android:text="  随借随还，按日计息"
+                    android:textColor="@color/redText"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    一次审核通过，最长1年内随时通过移动端办理借款、还款，循环使用，利息用一天算一天，惠好省，“关爱”随行。"
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yfx_shape_circle_stroke_grey"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yfx_gxd_rz_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/applyCondition"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="  个人实名认证"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="  工作单位信息"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="  基本联系信息"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/yfx_icon"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="  信用信息授权"
+                    android:textSize="@dimen/textview_small_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="　说　明："
+                        android:textColor="@color/TextColor_subsidiary"
+                        android:textSize="@dimen/textview_small_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="申请人年龄需不低于18周岁且不高于65周岁；\n中国银行江西省分行各主要合作企事业单位员工；\n申请环节可暂不关联我行借记卡；\n落实我行要求的各项授信条件。"
+                        android:textColor="@color/TextColor_subsidiary"
+                        android:textSize="@dimen/textview_small_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yfx_shape_circle_stroke_grey"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yfx_gxd_rz_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="贷款用途"
+                        android:textSize="@dimen/textview_normal_size" />
+                </LinearLayout>
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="    仅限于个人合法合理的消费支出，不得将贷款用于购房、投资经营，不得用于任何法律法规、监管规定、国政政策尽职银行贷款投入的项目、用途，包括股票、证券投资等。"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/svNewUI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnApply"
+            android:layout_marginTop="12dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ColorLine"
+                    android:visibility="gone" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:id="@+id/JTXTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="“中银E贷·关爱专属”消费贷款是面向关爱项目客户的专属信贷服务，期限最长1年，额度最高30万元。"
+                    android:textSize="@dimen/textview_normal_size" />
+
+                <LinearLayout
+                    android:id="@+id/llGAZS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="尊享额度，消费用途；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="手续简便，随借随还；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="按日计息，无需抵押；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFPT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="银行预先邀请；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="客户网上提款；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="贷款随借随还；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="按天计息还款；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFNT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="特邀客户尊享；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="网上申请提款；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="贷款随借随还；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/redText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="按天计息还款；"
+                            android:textColor="@color/TextColor_subsidiary"
+                            android:textSize="@dimen/textview_normal_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/ColorLine"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="注意事项："
+                    android:textColor="@color/TextColor_subsidiary"
+                    android:textSize="@dimen/textview_normal_size"
+                    android:visibility="gone" />
+
+                <com.bocop.yfx.view.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="贷款不得用于法律法规、监管规定、国家政策禁止银行贷款投入的项目、用途。"
+                    android:textSize="@dimen/textview_normal_size" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/BigButton"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/wantToApply"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

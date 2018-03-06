@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户号     "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_CusNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/xms_selector_edit"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户姓名 "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_CusName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/xms_selector_edit"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+	<TextView style="@style/line"  android:layout_marginTop="20dp"/>
+    <TextView style="@style/line" />
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+     <CheckBox
+                android:id="@+id/fincheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="同意"
+                android:gravity="left|center_vertical" 
+                android:visibility="gone"/>
+     <TextView
+         		android:id="@+id/tv_finagreement"
+                style="@dimen/textview_normal_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left|center_vertical"
+                android:text="交通违法简易认罚协议，详情请点击..."
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+      </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/btn_FinApply"
+        style="@style/BigButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:text="提交" />
+
+</LinearLayout>

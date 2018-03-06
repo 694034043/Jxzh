@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_new"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:src="@drawable/left_white_back" />
+
+
+        <TextView
+            android:text="个人"
+            android:id="@+id/tv_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_all_new"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/pc_headview_bg"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_login"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/pc_ic_head_logout" />
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tx_login"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView style="@style/bigline" />
+
+                <com.bocop.zyt.bocop.jxplatform.view.MyListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@drawable/list_item_divider"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none" />
+
+                <TextView style="@style/bigline" />
+
+                <com.bocop.zyt.bocop.jxplatform.view.MyListView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@drawable/list_item_divider"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none" />
+
+                <TextView style="@style/bigline" />
+
+                <com.bocop.zyt.bocop.jxplatform.view.MyListView
+                    android:id="@+id/listView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@null"
+                    android:divider="@drawable/list_item_divider"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/tv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/blue_button_selector"
+                    android:gravity="center"
+                    android:text="@string/tx_logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_normal_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

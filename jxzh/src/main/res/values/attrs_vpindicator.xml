@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ViewPagerIndicator  -->
+    <declare-styleable name="ViewPagerIndicator">
+    </declare-styleable>
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+   	<!-- ViewPagerIndicator  -->
+   	
+   	
+</resources>

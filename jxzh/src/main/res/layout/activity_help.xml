@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_activity_title" />
+    
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    <TextView
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Q：忘记密码如何找回？
+\nA：可在易互通用户中心通过找回密码功能重置密码。
+
+\n\nQ：易互通支持用户享受哪些服务
+\nA：用户可通过客户端进行生活缴费（包括手机充值、水费、电费、燃气费、取暖费、通讯费、有线电视费等）和交通罚款缴纳等功能。
+
+\n\nQ:如何使用便民缴费进行缴费？
+\nA：1、选择缴费通，点击要缴费的具体费种；2、选择城市，选择缴费单位，填写缴费信息：如缴费编号等，点击下一步；3、确认缴费信息，输入缴费金额等信息，点击下一步；4、进入手机端付款页面，选择银行卡，点击验证码，点击[确认支付]；6、缴费成功。
+
+\n\nQ：使用易互通进行缴费，收取手续费吗？
+\nA：不收取。易互通目前不收取任何手续费，您仅需缴纳缴费单位的相应费用。
+
+\n\nQ：易互通支持哪些支付方式？
+\nA：暂只支持中行借记卡
+
+\n\nQ：在什么时间段可以缴费？
+\nA：在选定缴费公司的时候，可以看到手机中会显示缴费时间段，不在该时间段内，将自动锁定缴费的下一步按钮，用户可以待下一个有效时间段内进行缴费。
+
+\n\nQ：我可以重新设置易互通的用户名吗？
+\nA：不可以。用户名是识别您身份的重要标志，一旦设定之后，就不可以更改，但是您可以修改相应的登录手机号或邮箱。
+
+\n\nQ：如果我在交易执行时，我的手机突然死机或网络连接断开，我该怎么处理？
+\nA：若缴费成功，会向您支付的银行卡的手机号发送扣费成功短信；如果未成功，您可决定待网络通讯恢复后，重新进行缴费或放弃。
+" />
+    
+</ScrollView>
+</LinearLayout>
+
+

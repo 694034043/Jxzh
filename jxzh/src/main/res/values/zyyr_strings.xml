@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="profIdentity">职业身份</string>
+    <string name="phoneNum">手机号码</string>
+    <string name="companyType">就职公司类型</string>
+    <string name="workYear">当前工龄</string>
+    <string name="monthPay">发放工资/月</string>
+    <string name="monthIncome">现金收入/月</string>
+    <string name="houseProp">名下房产类型</string>
+    <string name="houseValue">房产估值</string>
+    <string name="next">下一步</string>
+    <string name="localFund">是否有本地公积金</string>
+    <string name="localSocInsur">是否有本地社保</string>
+    <string name="car">名下是否有车 </string>
+    <string name="reserFundTime">公积金缴存时间</string>
+    <string name="socInsurTime">社保缴纳时间</string>
+    <string name="yourCredit">您的信用情况</string>
+    <string name="last">上一步</string>
+    <string name="ensure">确定</string>
+    <string name="affirm">确认</string>
+    <string name="edit">编辑</string>
+    <string name="rmb">元</string>
+    <string name="wan">万元</string>
+    <string name="year">年</string>
+    <string name="onFailure">请求失败，请稍后重试</string>
+    <string name="inputLoanAmount">请输入贷款金额</string>
+    <string name="chooseLoanPeriod">请选择贷款期限</string>
+    <string name="applyFailure">申请失败，请重试</string>
+    <string name="empty">输入不能为空</string>
+    <string name="inputCredit">请选择您的信用情况</string>
+    <string name="inputGjjTime">请输入公积金缴存时间</string>
+    <string name="inputInsurTime">请输入社保缴纳时间</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="submitSuccess">资料提交成功</string>
+    <string name="systemError">系统异常</string>
+    <string name="complete">完成</string>
+    <string name="authentInfo">认证资料</string>
+    
+</resources>

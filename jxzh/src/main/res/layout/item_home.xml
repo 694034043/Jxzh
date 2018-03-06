@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_app"
+    >
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        />
+   
+    
+     <ImageView 
+        android:id="@+id/ivSignState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_below="@id/iv_icon"
+        android:layout_centerHorizontal="true"
+        style="@style/text_low_black"
+        />
+    
+     <TextView
+        android:id="@+id/tvMsgCount"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:background="@drawable/xms_shap_circle_message"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:text="9+"
+        android:visibility="invisible"/>
+    
+
+</RelativeLayout>

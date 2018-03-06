@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fcf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_action_bar"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_bg_launch_new" >
+
+        <com.bocop.zyt.bocop.zyt.widget.core.PagerContainer
+            android:id="@+id/pc_main"
+            android:layout_width="match_parent"
+            android:paddingTop="20dp"
+            android:clipChildren="false"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:layout_gravity="center" />
+        </com.bocop.zyt.bocop.zyt.widget.core.PagerContainer>
+
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shape_funs_select"
+            android:gravity="center"
+            android:text="点击进入"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:id="@+id/tr_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_above="@id/tv_enter" >
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_gray_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_red_dot"
+                android:visibility="gone"
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+        </TableRow>
+    </RelativeLayout>
+
+</LinearLayout>

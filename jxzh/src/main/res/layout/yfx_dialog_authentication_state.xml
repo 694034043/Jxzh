@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPopWBg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucence"
+    android:padding="16dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yfx_selector_stroke"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:text="@string/costumerAuthentState"
+            android:textSize="@dimen/textview_normal_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp" >
+
+            <Button
+                android:id="@+id/btnIdentifyCom"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_gxd_complete"
+                android:clickable="false"
+                android:text="@string/realNameAuthent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textview_normal_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvIdentify"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_shape_stroke_green"
+                android:gravity="center"
+                android:text="@string/realNameAuthent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textview_normal_size" />
+
+            <Button
+                android:id="@+id/btnReplenishInfoCom"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_gxd_complete"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/addInfomation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textview_normal_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvReplenishInfo"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/yfx_gxd_status_none"
+                android:gravity="center"
+                android:text="@string/addInfomation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textview_normal_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vBg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1" />
+
+</LinearLayout>

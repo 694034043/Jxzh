@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/llMyAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="我的地址　"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        style="@style/text_view_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:drawableRight="@drawable/down"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="居住地址　"
+                            android:textSize="@dimen/textview_normal_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="("
+                            android:layout_marginLeft="8dp"
+                            android:textSize="@dimen/textview_normal_size"/>
+
+                        <EditText
+                            android:id="@+id/etCity"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                           android:background="@null"
+                            android:textColor="@color/grayMid"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:hint="城市"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textview_normal_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=") - ("
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/textview_normal_size"/>
+                        <EditText
+                            android:id="@+id/etArea"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:textColor="@color/grayMid"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:hint="辖区"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textview_normal_size" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=") - ("
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/textview_normal_size"/>
+                        <EditText
+                            android:id="@+id/etStreet"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:textColor="@color/grayMid"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:hint="街道、楼栋、房间号"
+                            android:singleLine="true"
+                            android:textSize="@dimen/textview_normal_size" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=")"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/textview_normal_size"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/addExample"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textview_small_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMyLinkman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/myLinkMan"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        style="@style/text_view_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:drawableRight="@drawable/down" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLinkDetail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+<!--                 <TextView -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_marginTop="8dp" -->
+<!--                     android:paddingLeft="16dp" -->
+<!--                     android:paddingRight="16dp" -->
+<!--                     android:text="@string/inputRealInfo" -->
+<!--                     android:textColor="@color/grayMid" -->
+<!--                     android:textSize="@dimen/textview_small_size" /> -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <include
+                    android:id="@+id/llMyFamil"
+                    layout="@layout/yfx_layout_my_family" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <include
+                    android:id="@+id/llMyFriend"
+                    layout="@layout/yfx_layout_my_friend" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <include
+                    android:id="@+id/llMyColleague"
+                    layout="@layout/yfx_layout_my_colleague" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/BigButton_Margin"
+        android:text="@string/store" />
+
+</LinearLayout>

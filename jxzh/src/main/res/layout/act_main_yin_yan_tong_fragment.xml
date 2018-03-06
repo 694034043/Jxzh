@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:src="@drawable/left_white_back" />
+
+
+        <TextView
+            android:id="@+id/tv_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_bg_yan_main_01">
+        
+        <ImageView
+	       	android:id="@+id/iv_prompt"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/yin_yan_tong_bg_prompt"
+	        android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_top_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <com.bocop.zyt.jx.view.indicator.CirclePageIndicator
+                android:id="@+id/vp_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/rl_vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <ImageView
+                android:id="@+id/iv_cicle_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.bocop.zyt.bocop.zyt.widget.SlidCircleView
+                android:id="@+id/iv_cicle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
